@@ -1,0 +1,51 @@
+{
+  "current": {
+    "report_date": "2026-05-15",
+    "gamma_exposure": "Positive",
+    "systematic_flow": "Neutral",
+    "pv_band": "Neutral",
+    "strategic_alloc": "Risk On",
+    "spx_last": 7501.25,
+    "pv_band_high": 7553.0,
+    "pv_band_low": 7346.0,
+    "upside_risk_pct": 0.69,
+    "spread_pct": 2.76,
+    "gex_throttle": 25.89,
+    "gex_flip": 7200.0,
+    "implied_move_pct": 1.26,
+    "resistance_strike": 7550.0,
+    "focal_strike": 7450.0,
+    "support_strike": 7350.0,
+    "option_score": 4,
+    "regime_label": "BULLISH",
+    "raw_extraction": {
+      "gamma_exposure": "Positive",
+      "systematic_flow": "Neutral",
+      "pv_band": "Neutral",
+      "strategic_alloc": "Risk On",
+      "spx_last": 7501.25,
+      "pv_band_high": 7553.0,
+      "pv_band_low": 7346.0,
+      "upside_risk_pct": 0.69,
+      "spread_pct": 2.76,
+      "gex_throttle": 25.89,
+      "gex_flip": 7200.0,
+      "implied_move_pct": 1.26,
+      "resistance_strike": 7550,
+      "focal_strike": 7450,
+      "support_strike": 7350
+    },
+    "inserted_at": "2026-05-15 16:37:50"
+  },
+  "series": [
+    {
+      "date": "2026-05-13",
+      "score": 4
+    },
+    {
+      "date": "2026-05-15",
+      "score": 4
+    }
+  ],
+  "timestamp": "2026-05-15T16:37:50.256817Z"
+}
