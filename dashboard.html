@@ -30,6 +30,9 @@
   .aurora .b2{width:660px;height:660px;background:var(--neu);top:-4%;right:-8%;opacity:.12;animation:drift 33s ease-in-out infinite alternate-reverse;}
   .aurora .b3{width:560px;height:560px;background:var(--off);bottom:-8%;right:6%;opacity:.11;animation:drift 30s ease-in-out infinite alternate;}
   .aurora .b4{width:580px;height:580px;background:var(--info);bottom:-8%;left:4%;opacity:.15;animation:drift 35s ease-in-out infinite alternate-reverse;}
+  .aurora .b5{width:640px;height:640px;background:var(--on);top:46%;left:-10%;opacity:.10;animation:drift 40s ease-in-out infinite alternate;}
+  .aurora .b6{width:600px;height:600px;background:var(--info);top:72%;right:-8%;opacity:.10;animation:drift 44s ease-in-out infinite alternate-reverse;}
+  #ambient{position:absolute;inset:0;z-index:0;pointer-events:none;}
   @keyframes drift{0%{transform:translate(0,0) scale(1);}50%{transform:translate(48px,-34px) scale(1.09);}100%{transform:translate(-34px,46px) scale(.94);}}
   #spotlight{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(420px circle at var(--mx,50%) var(--my,40%),rgba(107,183,255,.1),rgba(77,255,184,.05) 30%,transparent 60%);transition:background .12s linear;}
   #flow{position:absolute;inset:0;z-index:2;pointer-events:none;}
@@ -43,14 +46,14 @@
   .topbar .clock{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--ink-3);text-transform:uppercase;}
   .topbar .clock b{color:var(--ink);font-weight:500;}
 
-  #deck{position:relative;z-index:4;height:auto;min-height:720px;max-height:calc(100vh - 67px);transform-style:preserve-3d;}
+  #deck{position:relative;z-index:4;height:auto;min-height:680px;max-height:calc(100vh - 67px);transform-style:preserve-3d;}
   .layer{position:absolute;inset:0;will-change:transform;}
   #depthMid{left:50%;right:auto;width:100%;max-width:1040px;transform:translateX(-50%);}
   .hud-corner{position:absolute;z-index:6;font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);}
   .hud-corner b{color:var(--ink);font-weight:500;}
   .hud-tl{top:22px;left:34px;} .hud-tr{top:22px;right:34px;text-align:right;}
 
-  #core{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);width:280px;height:280px;z-index:5;display:flex;align-items:center;justify-content:center;cursor:help;}
+  #core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:280px;height:280px;z-index:5;display:flex;align-items:center;justify-content:center;cursor:help;}
   .ring{position:absolute;border-radius:50%;inset:0;border:1px solid var(--rule-2);}
   .ring.r1{inset:0;animation:spin 38s linear infinite;border-style:dashed;border-color:rgba(77,255,184,.25);}
   .ring.r2{inset:24px;animation:spinr 26s linear infinite;border-color:rgba(107,183,255,.2);}
@@ -74,6 +77,7 @@
   .orb-center .score-cap{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:8px;}
   .orb-center .score-cap .cap-core{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.36em;text-indent:.36em;color:#45EAFF;text-shadow:0 0 10px rgba(69,234,255,.7),0 0 24px rgba(69,234,255,.4);}
   .orb-center .score-cap .cap-os{font-family:var(--mono);font-size:7.5px;letter-spacing:.34em;text-indent:.34em;text-transform:uppercase;color:color-mix(in srgb,#45EAFF 55%,var(--ink-3));}
+  .orb-center .score-cap .cap-engine{font-family:var(--mono);font-size:8px;letter-spacing:.4em;text-indent:.4em;text-transform:uppercase;color:#FF7A1F;text-shadow:0 0 9px rgba(255,122,31,.55),0 0 18px rgba(255,122,31,.3);margin-top:4px;}
   .orb-pop{position:absolute;left:50%;top:104%;transform:translateX(-50%);z-index:30;width:300px;padding:16px 18px;opacity:0;pointer-events:none;border-radius:13px;background:rgba(6,9,14,.98);border:1px solid var(--rule-2);box-shadow:0 24px 70px rgba(0,0,0,.78);backdrop-filter:blur(12px);transition:opacity .16s;}
   .orb-pop .opt-h{font-family:var(--mono);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--info);margin-bottom:7px;}
   .orb-pop .opt-sub{font-size:10px;line-height:1.5;color:var(--ink-3);margin-bottom:11px;}
@@ -238,7 +242,8 @@
 </head>
 <body>
 <div id="stage">
-  <div class="aurora layer" id="aurora"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span></div>
+  <div class="aurora layer" id="aurora"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span><span class="blob b5"></span><span class="blob b6"></span></div>
+  <canvas id="ambient"></canvas>
   <div id="spotlight"></div>
   <canvas id="flow"></canvas>
 
@@ -256,10 +261,9 @@
       <div class="core-orb">
         <svg class="gauge" id="gauge" viewBox="0 0 200 200" aria-hidden="true"></svg>
         <div class="orb-center">
-          <div class="lbl">Regime Engine</div>
           <div class="regime" id="coreRegime">Bullish</div>
           <div class="score"><b id="coreScore">3.75</b><span class="sof">/ 5</span></div>
-          <div class="score-cap"><span class="cap-core">CORE4</span><span class="cap-os">Option Score</span></div>
+          <div class="score-cap"><span class="cap-core">CORE4</span><span class="cap-os">Option Score</span><span class="cap-engine">Engine</span></div>
         </div>
       </div>
       <div class="orb-pop" id="orbpop"></div>
@@ -267,14 +271,6 @@
 
     <div id="nodeWrap"></div>
     <div class="node-pop" id="npop"></div>
-
-    <div class="tape">
-      <div class="tcell"><div class="tl">SPX Last</div><div class="roll" data-roll="7553.68"></div><div class="tc neg">snapshot</div></div>
-      <div class="tcell"><div class="tl">Seasonal Strength</div><div class="roll" data-roll="15.17"></div><div class="tc pos">Strong suppression</div></div>
-      <div class="tcell"><div class="tl">Price Threshold</div><div class="roll" data-roll="7372.6"></div><div class="tc info">Above · stable</div></div>
-      <div class="tcell"><div class="tl">Positioning Pulse</div><div class="roll" data-roll="+0.30"></div><div class="tc neu">CTA long · neutral</div></div>
-      <div class="tcell"><div class="tl">Seasonal Tone</div><div class="roll" data-roll="55"></div><div class="tc neu">% &gt; 20D · healthy</div></div>
-    </div>
   </div></div>
 </div>
 
@@ -349,10 +345,10 @@ stage.addEventListener('mousemove',e=>{const r=stage.getBoundingClientRect();con
 (function pl(){cx+=(tx-cx)*0.06;cy+=(ty-cy)*0.06;aurora.style.transform='translate('+(cx*-40)+'px,'+(cy*-40)+'px)';requestAnimationFrame(pl);})();
 
 const CORE4=[
-  {k:'dealer',short:'Positioning',name:'Dealer Positioning',pos:[50,12],opts:['Positive','Neutral','Negative'],def:'Whether option dealers are long or short gamma — it sets how they hedge and shapes volatility. Positive means dealers buy dips and sell rallies, suppressing volatility.'},
-  {k:'flow',short:'Flow',name:'Institutional Flow',pos:[84,45],opts:['Bullish','Neutral','Bearish'],def:'Whether systematic funds (CTAs, vol control, risk parity) are net long or short equities. Neutral means holding steady, no flow pressure.'},
-  {k:'bias',short:'Range',name:'Price Range Bias',pos:[50,72],opts:['Long','Neutral','Short'],def:'Whether positioning is skewed toward appreciation or depreciation vs fair value. Neutral means a balanced, range-trading setup.'},
-  {k:'risk',short:'Risk',name:'Risk Stance',pos:[16,45],opts:['Risk On','Neutral','Risk Off'],def:'Macro positioning bias across managers. Risk On means managers are adding risk and equity demand is strong.'},
+  {k:'dealer',short:'Positioning',name:'Dealer Positioning',pos:[50,15],opts:['Positive','Neutral','Negative'],def:'Whether option dealers are long or short gamma — it sets how they hedge and shapes volatility. Positive means dealers buy dips and sell rallies, suppressing volatility.'},
+  {k:'flow',short:'Flow',name:'Institutional Flow',pos:[85,50],opts:['Bullish','Neutral','Bearish'],def:'Whether systematic funds (CTAs, vol control, risk parity) are net long or short equities. Neutral means holding steady, no flow pressure.'},
+  {k:'bias',short:'Range',name:'Price Range Bias',pos:[50,85],opts:['Long','Neutral','Short'],def:'Whether positioning is skewed toward appreciation or depreciation vs fair value. Neutral means a balanced, range-trading setup.'},
+  {k:'risk',short:'Risk',name:'Risk Stance',pos:[15,50],opts:['Risk On','Neutral','Risk Off'],def:'Macro positioning bias across managers. Risk On means managers are adding risk and equity demand is strong.'},
 ];
 function valToIdx(k,v){const i=CORE4.find(c=>c.k===k).opts.findIndex(o=>o.toLowerCase()===String(v).toLowerCase());return i<0?1:i;}
 const wrap=document.getElementById('nodeWrap');
@@ -390,22 +386,35 @@ const npop=document.getElementById('npop');let npopHideT;
 renderNodes();
 
 const fcv=document.getElementById('flow'),fctx=fcv.getContext('2d');let FW,FH,FDPR;
-const FNODES=[{k:'dealer',fx:.50,fy:.34,col:[77,255,184],active:true},{k:'flow',fx:.78,fy:.55,col:[255,181,52]},{k:'bias',fx:.50,fy:.74,col:[255,181,52]},{k:'risk',fx:.24,fy:.55,col:[77,255,184]}];
-const FCORE={fx:.50,fy:.535};
-function fresize(){FDPR=Math.min(window.devicePixelRatio||1,2);FW=fcv.clientWidth=stage.clientWidth;FH=fcv.clientHeight=document.getElementById('deck').clientHeight+67;fcv.width=FW*FDPR;fcv.height=FH*FDPR;fctx.setTransform(FDPR,0,0,FDPR,0,0);}
-window.addEventListener('resize',fresize);fresize();
-function FP(o){return{x:o.fx*FW,y:67+o.fy*(FH-67)};}
+const FCOL={dealer:[77,255,184],flow:[255,181,52],bias:[255,181,52],risk:[77,255,184]};
+let FNODES=[],FCORE={x:0,y:0};
+function nodeCenter(el){const cr=fcv.getBoundingClientRect(),r=el.getBoundingClientRect();return{x:r.left-cr.left+r.width/2,y:r.top-cr.top+r.height/2};}
+function fmap(){const coreEl=document.getElementById('core');if(coreEl)FCORE=nodeCenter(coreEl);FNODES=[...document.querySelectorAll('.node')].map(el=>{const c=nodeCenter(el);return{k:el.dataset.k,col:FCOL[el.dataset.k]||[77,255,184],active:el.dataset.k==='dealer',x:c.x,y:c.y};});}
+function fresize(){FDPR=Math.min(window.devicePixelRatio||1,2);FW=fcv.clientWidth=stage.clientWidth;FH=fcv.clientHeight=document.getElementById('deck').clientHeight+67;fcv.width=FW*FDPR;fcv.height=FH*FDPR;fctx.setTransform(FDPR,0,0,FDPR,0,0);fmap();}
+window.addEventListener('resize',fresize);window.addEventListener('load',()=>setTimeout(fresize,200));
+function FP(o){return{x:o.x,y:o.y};}
 function bez(t,p0,p1,p2){const u=1-t;return{x:u*u*p0.x+2*u*t*p1.x+t*t*p2.x,y:u*u*p0.y+2*u*t*p1.y+t*t*p2.y};}
 function ctrl(a,b){const mx=(a.x+b.x)/2,my=(a.y+b.y)/2,dx=b.x-a.x,dy=b.y-a.y,nx=-dy,ny=dx,len=Math.hypot(nx,ny)||1,bow=Math.hypot(dx,dy)*0.18;return{x:mx+nx/len*bow,y:my+ny/len*bow};}
-let parts=[];function spawn(){const core=FP(FCORE);FNODES.forEach(n=>{const np=FP(n);for(let i=0;i<(n.active?3:2);i++)parts.push({p0:np,p2:core,p1:ctrl(np,core),t:Math.random(),sp:0.0016+Math.random()*0.0022,col:n.col,r:1.1+Math.random()*1.6,phase:'in'});});}spawn();
-const ACT=FNODES.find(n=>n.active);
-function fstep(){fctx.clearRect(0,0,FW,FH);const core=FP(FCORE),ap=FP(ACT);
+let parts=[];function spawn(){parts=[];const core=FP(FCORE);FNODES.forEach(n=>{const np=FP(n);for(let i=0;i<(n.active?3:2);i++)parts.push({p0:np,p2:core,p1:ctrl(np,core),t:Math.random(),sp:0.0016+Math.random()*0.0022,col:n.col,r:1.1+Math.random()*1.6,phase:'in'});});}
+fresize();spawn();
+function fstep(){fctx.clearRect(0,0,FW,FH);if(!FNODES.length){requestAnimationFrame(fstep);return;}const ACT=FNODES.find(n=>n.active)||FNODES[0];const core=FP(FCORE),ap=FP(ACT);
   fctx.lineWidth=1;FNODES.forEach(n=>{const np=FP(n),c=ctrl(np,core);fctx.beginPath();fctx.moveTo(np.x,np.y);fctx.quadraticCurveTo(c.x,c.y,core.x,core.y);fctx.strokeStyle='rgba('+n.col[0]+','+n.col[1]+','+n.col[2]+',0.07)';fctx.stroke();});
   const c2=ctrl(core,ap);fctx.beginPath();fctx.moveTo(core.x,core.y);fctx.quadraticCurveTo(c2.x,c2.y,ap.x,ap.y);fctx.strokeStyle='rgba('+ACT.col.join(',')+',0.1)';fctx.lineWidth=1.4;fctx.stroke();
   parts.forEach(pt=>{pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.p0=core;pt.p2=ap;pt.p1=c2;pt.col=ACT.col;pt.phase='pool';}const pos=bez(pt.t,pt.p0,pt.p1,pt.p2);const a=pt.phase==='pool'?0.9:0.7;const g=fctx.createRadialGradient(pos.x,pos.y,0,pos.x,pos.y,pt.r*4);g.addColorStop(0,'rgba('+pt.col[0]+','+pt.col[1]+','+pt.col[2]+','+a+')');g.addColorStop(1,'rgba('+pt.col[0]+','+pt.col[1]+','+pt.col[2]+',0)');fctx.fillStyle=g;fctx.beginPath();fctx.arc(pos.x,pos.y,pt.r*4,0,7);fctx.fill();fctx.fillStyle='rgba('+pt.col[0]+','+pt.col[1]+','+pt.col[2]+','+a+')';fctx.beginPath();fctx.arc(pos.x,pos.y,pt.r,0,7);fctx.fill();});
   const tm=Date.now()/1000,pr=18+Math.sin(tm*1.6)*4;const pg=fctx.createRadialGradient(ap.x,ap.y,0,ap.x,ap.y,pr*2.4);pg.addColorStop(0,'rgba('+ACT.col.join(',')+',0.28)');pg.addColorStop(1,'rgba('+ACT.col.join(',')+',0)');fctx.fillStyle=pg;fctx.beginPath();fctx.arc(ap.x,ap.y,pr*2.4,0,7);fctx.fill();
   const cr=24+Math.sin(tm*1.9)*5;const cg=fctx.createRadialGradient(core.x,core.y,0,core.x,core.y,cr*2.6);cg.addColorStop(0,'rgba(77,255,184,0.22)');cg.addColorStop(1,'rgba(77,255,184,0)');fctx.fillStyle=cg;fctx.beginPath();fctx.arc(core.x,core.y,cr*2.6,0,7);fctx.fill();
   requestAnimationFrame(fstep);}fstep();
+
+/* ============ FULL-PAGE AMBIENT LIGHT ============ */
+const acv=document.getElementById('ambient'),actx=acv.getContext('2d');let AW,AH,ADPR,aparts=[];
+const ACOLS=[[77,255,184],[255,181,52],[107,183,255],[255,77,122]];
+function spawnAmb(){const n=Math.max(24,Math.round(AH/70));aparts=[];for(let i=0;i<n;i++){aparts.push({x:Math.random()*AW,y:Math.random()*AH,r:0.7+Math.random()*1.7,vy:-(0.07+Math.random()*0.20),sway:Math.random()*6.28,sp:0.0015+Math.random()*0.004,amp:8+Math.random()*26,col:ACOLS[(Math.random()*ACOLS.length)|0],a:0.10+Math.random()*0.24});}}
+function aresize(){ADPR=Math.min(window.devicePixelRatio||1,2);AW=acv.clientWidth=stage.clientWidth;AH=acv.clientHeight=stage.scrollHeight;acv.width=AW*ADPR;acv.height=AH*ADPR;actx.setTransform(ADPR,0,0,ADPR,0,0);spawnAmb();}
+let aT;function aresizeD(){clearTimeout(aT);aT=setTimeout(aresize,160);}
+function astep(){actx.clearRect(0,0,AW,AH);actx.globalCompositeOperation='lighter';aparts.forEach(p=>{p.y+=p.vy;p.sway+=p.sp;const x=p.x+Math.sin(p.sway)*p.amp;if(p.y<-24){p.y=AH+24;p.x=Math.random()*AW;}const g=actx.createRadialGradient(x,p.y,0,x,p.y,p.r*7);g.addColorStop(0,'rgba('+p.col[0]+','+p.col[1]+','+p.col[2]+','+p.a+')');g.addColorStop(1,'rgba('+p.col[0]+','+p.col[1]+','+p.col[2]+',0)');actx.fillStyle=g;actx.beginPath();actx.arc(x,p.y,p.r*7,0,7);actx.fill();actx.fillStyle='rgba('+p.col[0]+','+p.col[1]+','+p.col[2]+','+Math.min(1,p.a*2.2)+')';actx.beginPath();actx.arc(x,p.y,p.r,0,7);actx.fill();});actx.globalCompositeOperation='source-over';requestAnimationFrame(astep);}
+window.addEventListener('resize',aresizeD);window.addEventListener('load',()=>setTimeout(aresize,250));
+if(window.ResizeObserver){new ResizeObserver(aresizeD).observe(document.body);}
+aresize();astep();
 
 /* ============ CLASSIFIER CHART ============ */
 const COL={on:'#4DFFB8',neu:'#FFB534',off:'#FF4D7A'},RNAME={on:'RISK ON',neu:'NEUTRAL',off:'RISK OFF'},GCOL={pos:'#4DFFB8',neg:'#FF4D7A'};
@@ -557,13 +566,8 @@ const coreEl=document.getElementById('core'),orbpop=document.getElementById('orb
 coreEl.addEventListener('mouseenter',()=>{phold=true;clearTimeout(orbHideT);orbpop.style.opacity='1';});
 coreEl.addEventListener('click',()=>{phold=true;clearTimeout(orbHideT);orbpop.style.opacity='1';});
 coreEl.addEventListener('mouseleave',()=>{phold=false;orbHideT=setTimeout(()=>orbpop.style.opacity='0',130);});
-function renderTape(){
-  const cells=[['SPX Last',''+LATEST.spx,'snapshot','neg'],['Seasonal Strength',''+LATEST.strength,'Strong suppression','pos'],['Price Threshold',''+LATEST.threshold,'Above · stable','info'],['Positioning Pulse',(LATEST.pulse>0?'+':'')+LATEST.pulse.toFixed(2),'CTA · neutral','neu'],['Seasonal Tone',''+LATEST.tone20,'% > 20D · healthy','neu']];
-  const tape=document.querySelector('.tape');tape.innerHTML='';
-  cells.forEach(c=>{const cell=document.createElement('div');cell.className='tcell';cell.innerHTML='<div class="tl">'+c[0]+'</div><div class="roll" data-roll="'+c[1]+'"></div><div class="tc '+c[3]+'">'+c[2]+'</div>';tape.appendChild(cell);});
-  document.querySelectorAll('.roll').forEach(buildRoll);
-}
-renderCore();renderTape();
+function renderTape(){}
+renderCore();
 
 /* ============ REVEAL ON SCROLL ============ */
 const rio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
