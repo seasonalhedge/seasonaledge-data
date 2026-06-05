@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-06-04T16:55:38.297178",
-  "date": "2026-06-04",
-  "spx_last": 7553.68,
+  "timestamp": "2026-06-05T14:55:19.521716",
+  "date": "2026-06-05",
+  "spx_last": 7584.32,
   "core4": {
     "dealer_positioning": "Positive",
     "institutional_flow": "Neutral",
@@ -11,28 +11,28 @@
     "regime": "BULLISH"
   },
   "seasonal_strength": {
-    "value": 15.17,
+    "value": 16.1,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "strong_suppression"
   },
   "price_threshold": {
-    "level": 7372.6,
+    "level": 7391.9,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7553.68,
+    "current_spx": 7584.32,
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.7,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
-    "direction": "neutral",
+    "direction": "bullish",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7481.0,
-    "ceiling": 7692.0,
+    "floor": 7487.0,
+    "ceiling": 7698.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.79,
-    "headroom_pct": 1.83
+    "band_width_pct": 2.78,
+    "headroom_pct": 1.5
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
@@ -41,35 +41,35 @@
         "date": "2026-06-05",
         "event": "Non Farm Payrolls",
         "impact": "high",
-        "call_iv": 13.42,
-        "put_iv": 12.03,
-        "expected_move_pct": 0.94,
-        "iv_skew": "calls_favored"
+        "call_iv": 10.92,
+        "put_iv": 11.97,
+        "expected_move_pct": 0.59,
+        "iv_skew": "puts_favored"
       },
       {
         "date": "2026-06-10",
         "event": "Core Inflation Rate YoY",
         "impact": "high",
-        "call_iv": 14.07,
-        "put_iv": 12.68,
-        "expected_move_pct": 1.56,
+        "call_iv": 12.29,
+        "put_iv": 12.19,
+        "expected_move_pct": 1.28,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 55,
-    "pct_above_50d_ma": 60,
+    "pct_above_20d_ma": 72,
+    "pct_above_50d_ma": 68,
     "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
-    "leader": "XLC",
-    "leader_upside_pct": 3.38,
-    "laggard": "XLE",
-    "laggard_downside_pct": -4.84
+    "leader": "XLK",
+    "leader_upside_pct": 3.42,
+    "laggard": "XLV",
+    "laggard_downside_pct": -3.46
   }
 }
