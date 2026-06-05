@@ -43,8 +43,9 @@
   .topbar .clock{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--ink-3);text-transform:uppercase;}
   .topbar .clock b{color:var(--ink);font-weight:500;}
 
-  #deck{position:relative;z-index:4;height:auto;min-height:580px;max-height:calc(100vh - 67px);transform-style:preserve-3d;}
+  #deck{position:relative;z-index:4;height:auto;min-height:720px;max-height:calc(100vh - 67px);transform-style:preserve-3d;}
   .layer{position:absolute;inset:0;will-change:transform;}
+  #depthMid{left:50%;right:auto;width:100%;max-width:1040px;transform:translateX(-50%);}
   .hud-corner{position:absolute;z-index:6;font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);}
   .hud-corner b{color:var(--ink);font-weight:500;}
   .hud-tl{top:22px;left:34px;} .hud-tr{top:22px;right:34px;text-align:right;}
@@ -197,7 +198,7 @@
   .cfoot .stat{margin-left:auto;display:flex;gap:16px;}.cfoot .stat b{color:var(--ink-2);font-weight:500;}
 
   /* signal cards */
-  .sig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule-2);border:1px solid var(--rule-2);border-radius:12px;overflow:hidden;}
+  .sig-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule-2);border:1px solid var(--rule-2);border-radius:12px;overflow:hidden;}
   .sig{background:linear-gradient(180deg,var(--paper-2),var(--paper-3));padding:20px 22px;cursor:pointer;position:relative;transition:background .3s;display:flex;flex-direction:column;min-height:118px;}
   .sig::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--sc);box-shadow:0 0 16px color-mix(in srgb,var(--sc) 60%,transparent);}
   .sig:hover{background:linear-gradient(180deg,var(--paper-3),var(--paper-2));}
@@ -213,7 +214,7 @@
   .sig .sx-in .xt{font-size:11px;color:var(--ink-2);line-height:1.6;margin-bottom:10px;}
   .sig .chev{font-size:9px;color:var(--ink-3);transition:transform .25s;}
   .sig.open .chev{transform:rotate(90deg);}
-  .sig.wide{grid-column:span 3;}
+  .sig.wide{grid-column:span 2;}
   .cat-row{display:grid;grid-template-columns:80px 1fr auto auto auto;gap:14px;align-items:center;padding:9px 0;border-top:1px solid var(--rule);font-size:11px;}
   .cat-row .cd{font-family:var(--mono);font-size:8px;letter-spacing:.16em;color:var(--info);text-transform:uppercase;}
   .tag{font-family:var(--mono);font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:1px solid;}
@@ -348,10 +349,10 @@ stage.addEventListener('mousemove',e=>{const r=stage.getBoundingClientRect();con
 (function pl(){cx+=(tx-cx)*0.06;cy+=(ty-cy)*0.06;aurora.style.transform='translate('+(cx*-40)+'px,'+(cy*-40)+'px)';requestAnimationFrame(pl);})();
 
 const CORE4=[
-  {k:'dealer',short:'Positioning',name:'Dealer Positioning',pos:[50,15],opts:['Positive','Neutral','Negative'],def:'Whether option dealers are long or short gamma — it sets how they hedge and shapes volatility. Positive means dealers buy dips and sell rallies, suppressing volatility.'},
-  {k:'flow',short:'Flow',name:'Institutional Flow',pos:[84,46],opts:['Bullish','Neutral','Bearish'],def:'Whether systematic funds (CTAs, vol control, risk parity) are net long or short equities. Neutral means holding steady, no flow pressure.'},
-  {k:'bias',short:'Range',name:'Price Range Bias',pos:[50,78],opts:['Long','Neutral','Short'],def:'Whether positioning is skewed toward appreciation or depreciation vs fair value. Neutral means a balanced, range-trading setup.'},
-  {k:'risk',short:'Risk',name:'Risk Stance',pos:[16,46],opts:['Risk On','Neutral','Risk Off'],def:'Macro positioning bias across managers. Risk On means managers are adding risk and equity demand is strong.'},
+  {k:'dealer',short:'Positioning',name:'Dealer Positioning',pos:[50,12],opts:['Positive','Neutral','Negative'],def:'Whether option dealers are long or short gamma — it sets how they hedge and shapes volatility. Positive means dealers buy dips and sell rallies, suppressing volatility.'},
+  {k:'flow',short:'Flow',name:'Institutional Flow',pos:[84,45],opts:['Bullish','Neutral','Bearish'],def:'Whether systematic funds (CTAs, vol control, risk parity) are net long or short equities. Neutral means holding steady, no flow pressure.'},
+  {k:'bias',short:'Range',name:'Price Range Bias',pos:[50,72],opts:['Long','Neutral','Short'],def:'Whether positioning is skewed toward appreciation or depreciation vs fair value. Neutral means a balanced, range-trading setup.'},
+  {k:'risk',short:'Risk',name:'Risk Stance',pos:[16,45],opts:['Risk On','Neutral','Risk Off'],def:'Macro positioning bias across managers. Risk On means managers are adding risk and equity demand is strong.'},
 ];
 function valToIdx(k,v){const i=CORE4.find(c=>c.k===k).opts.findIndex(o=>o.toLowerCase()===String(v).toLowerCase());return i<0?1:i;}
 const wrap=document.getElementById('nodeWrap');
