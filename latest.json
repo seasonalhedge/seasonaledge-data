@@ -1,75 +1,75 @@
 {
-  "timestamp": "2026-06-10T15:26:10.849485",
-  "date": "2026-06-10",
-  "spx_last": 7386.66,
+  "timestamp": "2026-06-12T13:37:42.557210",
+  "date": "2026-06-12",
+  "spx_last": 7394.31,
   "core4": {
     "dealer_positioning": "Neutral",
     "institutional_flow": "Bearish",
-    "price_range_bias": "Long",
-    "risk_stance": "Risk On",
-    "option_score": 3,
+    "price_range_bias": "Neutral",
+    "risk_stance": "Risk Off",
+    "option_score": 2,
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": 0.06,
+    "value": 0.95,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7386.25,
+    "level": 7383.02,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7386.66,
-    "status": "above_threshold_stable"
+    "current_spx": 7394.31,
+    "status": "approaching_threshold"
   },
   "positioning_pulse": {
-    "z_score": -0.9,
+    "z_score": -0.8,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
-    "cta_positioning": "long"
+    "cta_positioning": "short"
   },
   "seasonal_bands": {
-    "floor": 7310.0,
-    "ceiling": 7571.0,
+    "floor": 7236.0,
+    "ceiling": 7517.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 3.53,
-    "headroom_pct": 2.5
+    "band_width_pct": 3.8,
+    "headroom_pct": 1.66
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-06-10",
-        "event": "Core Inflation Rate YoY",
+        "date": "2026-06-12",
+        "event": "Michigan Consumer Sentiment Prel",
         "impact": "high",
-        "call_iv": 17.58,
-        "put_iv": 25.25,
-        "expected_move_pct": 1.11,
-        "iv_skew": "puts_favored"
+        "call_iv": 25.28,
+        "put_iv": 20.14,
+        "expected_move_pct": 1.18,
+        "iv_skew": "calls_favored"
       },
       {
         "date": "2026-06-17",
         "event": "Fed Interest Rate Decision",
         "impact": "high",
-        "call_iv": 21.96,
-        "put_iv": 23.35,
-        "expected_move_pct": 2.9,
-        "iv_skew": "puts_favored"
+        "call_iv": 24.55,
+        "put_iv": 21.79,
+        "expected_move_pct": 2.42,
+        "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 70,
-    "pct_above_50d_ma": 65,
-    "pct_above_200d_ma": 68,
+    "pct_above_20d_ma": 65,
+    "pct_above_50d_ma": 60,
+    "pct_above_200d_ma": 70,
     "momentum_health": "neutral",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 7.77,
+    "leader_upside_pct": 6.53,
     "laggard": "XLK",
-    "laggard_downside_pct": -3.3
+    "laggard_downside_pct": -8.41
   }
 }
