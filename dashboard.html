@@ -390,6 +390,12 @@ function renderNodes(){
     node.addEventListener('click',()=>{phold=true;clearTimeout(npopHideT);showPop();});
     node.addEventListener('mouseleave',()=>{phold=false;npopHideT=setTimeout(()=>npop.style.opacity='0',130);});
     wrap.appendChild(node);
+    if(c.def){
+      const t=document.createElement('div');t.className='tooltip';t.textContent=c.def;
+      node.appendChild(t);
+      node.addEventListener('mouseenter',()=>t.classList.add('show'));
+      node.addEventListener('mouseleave',()=>t.classList.remove('show'));
+    }
   });
 }
 const npop=document.getElementById('npop');let npopHideT;
@@ -597,9 +603,48 @@ function applyLatest(d){
     LATEST.momentum={leader:d.seasonal_momentum.leader,lead:d.seasonal_momentum.leader_upside_pct,laggard:d.seasonal_momentum.laggard,lag:d.seasonal_momentum.laggard_downside_pct};
     LATEST.catalyst=(d.seasonal_catalyst.events||[]).slice(0,2).map(e=>({date:e.date,event:e.event,move:e.expected_move_pct,skew:e.iv_skew&&e.iv_skew.indexOf('put')>=0?'Puts':'Calls',cd:''}));
     renderCore();renderNodes();renderTape();renderSignals();
-    addNodeTooltips();
+    
   }catch(e){console.log('applyLatest error',e);}
 }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
   function addNodeTooltips(){
     document.querySelectorAll(".node").forEach(node => {
       const def = node.getAttribute("data-def");
