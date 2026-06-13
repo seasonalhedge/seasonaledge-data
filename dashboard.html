@@ -600,6 +600,32 @@ function applyLatest(d){
     addNodeTooltips();
   }catch(e){console.log('applyLatest error',e);}
 }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
 async function refresh(){
   try{const r=await fetch(HIST_URL+'?t='+Date.now());if(r.ok){const j=await r.json();if(j.series&&j.series.length>5){SERIES=j.series;crebuild();cdraw(cprogress);}}}catch(e){}
   try{const r=await fetch(LATEST_URL+'?t='+Date.now());if(r.ok){const d=await r.json();applyLatest(d);}}catch(e){}
