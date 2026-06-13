@@ -244,7 +244,7 @@
 
   /* Tooltip styles */
   .tooltip{position:absolute;background:rgba(4,6,10,.95);color:var(--ink);padding:10px 14px;border-radius:6px;font-size:11px;line-height:1.5;width:220px;z-index:1000;border:1px solid var(--rule-2);pointer-events:none;white-space:normal;backdrop-filter:blur(8px);display:none;bottom:calc(100% + 12px);left:50%;transform:translateX(-50%);}
-  .tooltip.show{display:block;}
+  .tooltip{display:none;} .node:hover .tooltip{display:block;}
   .tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid rgba(4,6,10,.95);}
   #orbpop{max-height:280px;bottom:auto;top:-320px;}
 
@@ -393,8 +393,6 @@ function renderNodes(){
     if(c.def){
       const t=document.createElement('div');t.className='tooltip';t.textContent=c.def;
       node.appendChild(t);
-      node.addEventListener('mouseenter',()=>t.classList.add('show'));
-      node.addEventListener('mouseleave',()=>t.classList.remove('show'));
     }
   });
 }
@@ -606,6 +604,45 @@ function applyLatest(d){
     
   }catch(e){console.log('applyLatest error',e);}
 }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
   function addNodeTooltips(){
     document.querySelectorAll(".node").forEach(node => {
       const def = node.getAttribute("data-def");
