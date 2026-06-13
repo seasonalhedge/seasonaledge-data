@@ -364,7 +364,7 @@ function renderNodes(){
     node.className='node'+(active?' active':'');
     node.style.setProperty('--nc', idx===0?'var(--on)':idx===1?'var(--neu)':'var(--off)');
     node.style.left=c.pos[0]+'%';node.style.top=c.pos[1]+'%';
-    node.dataset.k=c.k;
+    node.dataset.k=c.k;node.setAttribute('data-def',c.def);
     let opts='';c.opts.forEach((o,i)=>{opts+='<div class="opt'+(i===idx?' on c'+i:'')+'">'+o+'</div>';});
     node.innerHTML='<div class="nname">'+(c.short||c.name)+'</div><div class="nopts">'+opts+'</div>';
     const showPop=()=>{
