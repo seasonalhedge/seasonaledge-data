@@ -64,7 +64,7 @@
     background:radial-gradient(circle at 38% 32%,rgba(77,255,184,.18),transparent 60%),radial-gradient(circle at center,rgba(8,11,17,.9),rgba(4,6,10,.96));
     border:1px solid rgba(77,255,184,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;backdrop-filter:blur(10px);animation:corepulse 3.5s ease-in-out infinite;}
   @keyframes corepulse{0%,100%{box-shadow:0 0 1px var(--on),0 0 34px color-mix(in srgb,var(--on) 32%,transparent),inset 0 0 60px color-mix(in srgb,var(--on) 9%,transparent);}50%{box-shadow:0 0 1px var(--on),0 0 58px color-mix(in srgb,var(--on) 52%,transparent),inset 0 0 70px color-mix(in srgb,var(--on) 16%,transparent);}}
-  .gauge{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;}
+  .gauge{position:absolute;top:50%;left:50%;width:200px;height:200px;transform:translate(-50%,-50%);overflow:visible;pointer-events:none;}
   .gtick{stroke-width:3.4;stroke-linecap:round;transition:stroke .5s,opacity .5s;}
   .gtick.off{stroke:var(--rule-2);opacity:.45;}
   .gnum{font-family:var(--mono);font-size:8px;fill:var(--ink-3);}
@@ -246,6 +246,7 @@
   .tooltip{position:absolute;background:rgba(4,6,10,.95);color:var(--ink);padding:10px 14px;border-radius:6px;font-size:11px;line-height:1.5;width:220px;z-index:1000;border:1px solid var(--rule-2);pointer-events:none;white-space:normal;backdrop-filter:blur(8px);display:none;bottom:calc(100% + 12px);left:50%;transform:translateX(-50%);}
   .tooltip{display:none;}
   .node:hover .tooltip{display:block;}
+  .node.pop-active .tooltip{display:none !important;}
   .tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid rgba(4,6,10,.95);}
   #orbpop{max-height:280px;bottom:auto;top:-320px;}
 
@@ -386,10 +387,10 @@ function renderNodes(){
       const pw=232;if(x+pw/2>r.width-6)x=r.width-6-pw/2;if(x-pw/2<6)x=6+pw/2;
       let y=above?(nr.top-r.top-12):(nr.bottom-r.top+12);
       npop.style.transform='translateX(-50%)'+(above?' translateY(-100%)':'');
-      npop.style.left=x+'px';npop.style.top=y+'px';npop.style.opacity='1';};
+      npop.style.left=x+'px';npop.style.top=y+'px';npop.style.opacity='1';node.classList.add('pop-active');};
     node.addEventListener('mouseenter',()=>{phold=true;clearTimeout(npopHideT);showPop();});
     node.addEventListener('click',()=>{phold=true;clearTimeout(npopHideT);showPop();});
-    node.addEventListener('mouseleave',()=>{phold=false;npopHideT=setTimeout(()=>npop.style.opacity='0',130);});
+    node.addEventListener('mouseleave',()=>{phold=false;npopHideT=setTimeout(()=>npop.style.opacity='0';node.classList.remove('pop-active'),130);});
     wrap.appendChild(node);
     if(c.def){
       const t=document.createElement('div');t.className='tooltip';t.textContent=c.def;
