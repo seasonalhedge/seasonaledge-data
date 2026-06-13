@@ -390,7 +390,7 @@ function renderNodes(){
       npop.style.left=x+'px';npop.style.top=y+'px';npop.style.opacity='1';node.classList.add('pop-active');};
     node.addEventListener('mouseenter',()=>{phold=true;clearTimeout(npopHideT);showPop();});
     node.addEventListener('click',()=>{phold=true;clearTimeout(npopHideT);showPop();});
-    node.addEventListener('mouseleave',()=>{phold=false;npopHideT=setTimeout(()=>npop.style.opacity='0';node.classList.remove('pop-active'),130);});
+    node.addEventListener('mouseleave',()=>{phold=false;npopHideT=setTimeout(()=>{npop.style.opacity='0';node.classList.remove('pop-active');},130);});
     wrap.appendChild(node);
     if(c.def){
       const t=document.createElement('div');t.className='tooltip';t.textContent=c.def;
