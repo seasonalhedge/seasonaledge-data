@@ -385,7 +385,6 @@ function renderNodes(){
       // anchor to the node: centered horizontally, below it (or above if low on screen)
       let x=(nr.left-r.left)+nr.width/2, above=(nr.top-r.top)>r.height*0.52;
       const pw=232;if(x+pw/2>r.width-6)x=r.width-6-pw/2;if(x-pw/2<6)x=6+pw/2;
-    let y=80;
       let y=above?(nr.top-r.top-12):(nr.bottom-r.top+12);
       npop.style.transform='translateX(-50%)'+(above?' translateY(-100%)':'');
       npop.style.left=x+'px';npop.style.top=y+'px';npop.style.opacity='1';node.classList.add('pop-active');};
@@ -587,6 +586,7 @@ coreEl.addEventListener('mouseenter',()=>{
     const r=mid.getBoundingClientRect(),cr=coreEl.getBoundingClientRect();
     let x=(cr.left-r.left)+cr.width/2;const pw=312;
     if(x+pw/2>r.width-6)x=r.width-6-pw/2;if(x-pw/2<6)x=6+pw/2;
+    let y=80;
     orbpop.style.transform='translateX(-50%) translateY(-100%)';
     let y=80;
     orbpop.style.left=x+'px';orbpop.style.top=y+'px';orbpop.style.opacity='1';
