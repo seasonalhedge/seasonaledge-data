@@ -348,10 +348,10 @@ stage.addEventListener('mousemove',e=>{const r=stage.getBoundingClientRect();con
 (function pl(){cx+=(tx-cx)*0.06;cy+=(ty-cy)*0.06;aurora.style.transform='translate('+(cx*-40)+'px,'+(cy*-40)+'px)';requestAnimationFrame(pl);})();
 
 const CORE4=[
-  {k:'dealer',short:'Positioning',name:'Dealer Positioning',pos:[85,30],opts:['Positive','Neutral','Negative'],def:'Whether option dealers are long or short gamma — it sets how they hedge and shapes volatility. Positive means dealers buy dips and sell rallies, suppressing volatility.'},
-  {k:'flow',short:'Flow',name:'Institutional Flow',pos:[85,65],opts:['Bullish','Neutral','Bearish'],def:'Whether systematic funds (CTAs, vol control, risk parity) are net long or short equities. Neutral means holding steady, no flow pressure.'},
-  {k:'bias',short:'Range',name:'Price Range Bias',pos:[15,65],opts:['Long','Neutral','Short'],def:'Whether positioning is skewed toward appreciation or depreciation vs fair value. Neutral means a balanced, range-trading setup.'},
-  {k:'risk',short:'Risk',name:'Risk Stance',pos:[15,30],opts:['Risk On','Neutral','Risk Off'],def:'Macro positioning bias across managers. Risk On means managers are adding risk and equity demand is strong.'},
+  {k:'dealer',short:'Positioning',name:'Dealer Positioning',pos:[85,20],opts:['Positive','Neutral','Negative'],def:'Whether option dealers are long or short gamma — it sets how they hedge and shapes volatility. Positive means dealers buy dips and sell rallies, suppressing volatility.'},
+  {k:'flow',short:'Flow',name:'Institutional Flow',pos:[85,55],opts:['Bullish','Neutral','Bearish'],def:'Whether systematic funds (CTAs, vol control, risk parity) are net long or short equities. Neutral means holding steady, no flow pressure.'},
+  {k:'bias',short:'Range',name:'Price Range Bias',pos:[15,55],opts:['Long','Neutral','Short'],def:'Whether positioning is skewed toward appreciation or depreciation vs fair value. Neutral means a balanced, range-trading setup.'},
+  {k:'risk',short:'Risk',name:'Risk Stance',pos:[15,20],opts:['Risk On','Neutral','Risk Off'],def:'Macro positioning bias across managers. Risk On means managers are adding risk and equity demand is strong.'},
 ];
 function valToIdx(k,v){const i=CORE4.find(c=>c.k===k).opts.findIndex(o=>o.toLowerCase()===String(v).toLowerCase());return i<0?1:i;}
 const wrap=document.getElementById('nodeWrap');
