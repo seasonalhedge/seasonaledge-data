@@ -588,7 +588,6 @@ coreEl.addEventListener('mouseenter',()=>{
     if(x+pw/2>r.width-6)x=r.width-6-pw/2;if(x-pw/2<6)x=6+pw/2;
     let y=80;
     orbpop.style.transform='translateX(-50%) translateY(-100%)';
-    let y=80;
     orbpop.style.left=x+'px';orbpop.style.top=y+'px';orbpop.style.opacity='1';
   });
 coreEl.addEventListener('click',()=>{phold=true;clearTimeout(orbHideT);orbpop.style.opacity='1';});
