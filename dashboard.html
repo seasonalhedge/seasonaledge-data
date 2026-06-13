@@ -586,9 +586,9 @@ coreEl.addEventListener('mouseenter',()=>{
     const r=mid.getBoundingClientRect(),cr=coreEl.getBoundingClientRect();
     let x=(cr.left-r.left)+cr.width/2;const pw=312;
     if(x+pw/2>r.width-6)x=r.width-6-pw/2;if(x-pw/2<6)x=6+pw/2;
-    let above=(cr.top-r.top)>r.height*0.52;
+    let x=(cr.left-r.left)+cr.width/2;const pw=312;
     let y=Math.max(cr.top-r.top-120,20);
-    orbpop.style.transform='translateX(-50%)'+(above?' translateY(-100%)':'');
+    orbpop.style.transform='translateX(-50%) translateY(-100%)';
     orbpop.style.left=x+'px';orbpop.style.top=y+'px';orbpop.style.opacity='1';
   });
 coreEl.addEventListener('click',()=>{phold=true;clearTimeout(orbHideT);orbpop.style.opacity='1';});
