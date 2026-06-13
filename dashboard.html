@@ -241,6 +241,13 @@
     .sig-grid{grid-template-columns:1fr;}.sig.wide{grid-column:span 1;}
     .cat-row{grid-template-columns:64px 1fr auto;}.cat-row .cm,.cat-row .cd2{display:none;}
   }
+
+  /* Tooltip styles */
+  .tooltip{position:absolute;background:rgba(4,6,10,.95);color:var(--ink);padding:10px 14px;border-radius:6px;font-size:11px;line-height:1.5;width:220px;z-index:1000;border:1px solid var(--rule-2);pointer-events:none;white-space:normal;backdrop-filter:blur(8px);display:none;bottom:calc(100% + 12px);left:50%;transform:translateX(-50%);}
+  .tooltip.show{display:block;}
+  .tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid rgba(4,6,10,.95);}
+  #orbpop{max-height:280px;bottom:auto;top:-320px;}
+
 </style>
 </head>
 <body>
@@ -590,6 +597,7 @@ function applyLatest(d){
     LATEST.momentum={leader:d.seasonal_momentum.leader,lead:d.seasonal_momentum.leader_upside_pct,laggard:d.seasonal_momentum.laggard,lag:d.seasonal_momentum.laggard_downside_pct};
     LATEST.catalyst=(d.seasonal_catalyst.events||[]).slice(0,2).map(e=>({date:e.date,event:e.event,move:e.expected_move_pct,skew:e.iv_skew&&e.iv_skew.indexOf('put')>=0?'Puts':'Calls',cd:''}));
     renderCore();renderNodes();renderTape();renderSignals();
+    addNodeTooltips();
   }catch(e){console.log('applyLatest error',e);}
 }
 async function refresh(){
