@@ -580,7 +580,16 @@ function renderCore(){
     '</div>';
 }
 const coreEl=document.getElementById('core'),orbpop=document.getElementById('orbpop');let orbHideT;
-coreEl.addEventListener('mouseenter',()=>{phold=true;clearTimeout(orbHideT);orbpop.style.opacity='1';});
+coreEl.addEventListener('mouseenter',()=>{
+    phold=true;clearTimeout(orbHideT);
+    const r=mid.getBoundingClientRect(),cr=coreEl.getBoundingClientRect();
+    let x=(cr.left-r.left)+cr.width/2;const pw=312;
+    if(x+pw/2>r.width-6)x=r.width-6-pw/2;if(x-pw/2<6)x=6+pw/2;
+    let above=(cr.top-r.top)>r.height*0.52;
+    let y=above?(cr.top-r.top-12):(cr.bottom-r.top+12);
+    orbpop.style.transform='translateX(-50%)'+(above?' translateY(-100%)':'');
+    orbpop.style.left=x+'px';orbpop.style.top=y+'px';orbpop.style.opacity='1';
+  });
 coreEl.addEventListener('click',()=>{phold=true;clearTimeout(orbHideT);orbpop.style.opacity='1';});
 coreEl.addEventListener('mouseleave',()=>{phold=false;orbHideT=setTimeout(()=>orbpop.style.opacity='0',130);});
 function renderTape(){}
@@ -605,6 +614,19 @@ function applyLatest(d){
     
   }catch(e){console.log('applyLatest error',e);}
 }
+  function addNodeTooltips(){
+    document.querySelectorAll(".node").forEach(node => {
+      const def = node.getAttribute("data-def");
+      if (def) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = def;
+        node.appendChild(tooltip);
+        node.addEventListener("mouseenter", () => tooltip.classList.add("show"));
+        node.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+      }
+    });
+  }
   function addNodeTooltips(){
     document.querySelectorAll(".node").forEach(node => {
       const def = node.getAttribute("data-def");
