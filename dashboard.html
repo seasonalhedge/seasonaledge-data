@@ -53,7 +53,7 @@
   .hud-corner b{color:var(--ink);font-weight:500;}
   .hud-tl{top:22px;left:34px;} .hud-tr{top:22px;right:34px;text-align:right;}
 
-  #core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:280px;height:280px;z-index:5;display:flex;align-items:center;justify-content:center;cursor:help;}
+  #core{pointer-events:auto;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:280px;height:280px;z-index:5;display:flex;align-items:center;justify-content:center;cursor:help;}
   .ring{position:absolute;border-radius:50%;inset:0;border:1px solid var(--rule-2);}
   .ring.r1{inset:0;animation:spin 38s linear infinite;border-style:dashed;border-color:rgba(77,255,184,.25);}
   .ring.r2{inset:24px;animation:spinr 26s linear infinite;border-color:rgba(107,183,255,.2);}
@@ -230,10 +230,10 @@
   .colophon{max-width:1240px;margin:0 auto;padding:24px 34px 56px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);font-family:var(--mono);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);}
   .colophon b{color:var(--ink);font-weight:600;}
 
-  @media(max-width:1080px){.node{width:138px;}#core{width:240px;height:240px;}.sig-grid{grid-template-columns:1fr 1fr;}.sig.wide{grid-column:span 2;}}
+  @media(max-width:1080px){.node{width:138px;}#core{pointer-events:auto;width:240px;height:240px;}.sig-grid{grid-template-columns:1fr 1fr;}.sig.wide{grid-column:span 2;}}
   @media(max-width:720px){
     #deck{height:auto;min-height:0;padding:24px 0 30px;}.layer{position:relative;height:auto;}
-    #core{position:relative;left:auto;top:auto;transform:none;margin:0 auto 24px;}
+    #core{pointer-events:auto;position:relative;left:auto;top:auto;transform:none;margin:0 auto 24px;}
     .node{position:relative;left:auto!important;top:auto!important;transform:none;margin:10px auto;width:84%;}.node:hover{transform:scale(1.02);}
     .tape{position:relative;bottom:auto;left:auto;transform:none;margin:20px auto 0;flex-wrap:wrap;width:92%;}
     #flow,.hud-corner{display:none;}
