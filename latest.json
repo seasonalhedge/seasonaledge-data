@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-06-12T13:37:42.557210",
-  "date": "2026-06-12",
-  "spx_last": 7394.31,
+  "timestamp": "2026-06-18T18:43:00.767488",
+  "date": "2026-06-18",
+  "spx_last": 7420.11,
   "core4": {
     "dealer_positioning": "Neutral",
     "institutional_flow": "Bearish",
@@ -11,65 +11,65 @@
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": 0.95,
+    "value": 2.94,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7383.02,
+    "level": 7385.42,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7394.31,
-    "status": "approaching_threshold"
+    "current_spx": 7420.11,
+    "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": -0.8,
+    "z_score": -1.0,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
     "cta_positioning": "short"
   },
   "seasonal_bands": {
-    "floor": 7236.0,
-    "ceiling": 7517.0,
+    "floor": 7330.0,
+    "ceiling": 7578.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 3.8,
-    "headroom_pct": 1.66
+    "band_width_pct": 3.34,
+    "headroom_pct": 2.13
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-06-12",
-        "event": "Michigan Consumer Sentiment Prel",
+        "date": "2026-06-25",
+        "event": "Core PCE Price Index MoM",
         "impact": "high",
-        "call_iv": 25.28,
-        "put_iv": 20.14,
-        "expected_move_pct": 1.18,
+        "call_iv": 22.32,
+        "put_iv": 19.9,
+        "expected_move_pct": 2.47,
         "iv_skew": "calls_favored"
       },
       {
-        "date": "2026-06-17",
-        "event": "Fed Interest Rate Decision",
+        "date": "2026-06-25",
+        "event": "GDP Growth Rate QoQ Final",
         "impact": "high",
-        "call_iv": 24.55,
-        "put_iv": 21.79,
-        "expected_move_pct": 2.42,
+        "call_iv": 22.32,
+        "put_iv": 19.9,
+        "expected_move_pct": 2.47,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 65,
-    "pct_above_50d_ma": 60,
-    "pct_above_200d_ma": 70,
-    "momentum_health": "neutral",
+    "pct_above_20d_ma": 30,
+    "pct_above_50d_ma": 45,
+    "pct_above_200d_ma": 55,
+    "momentum_health": "oversold",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 6.53,
+    "leader_upside_pct": 5.2,
     "laggard": "XLK",
-    "laggard_downside_pct": -8.41
+    "laggard_downside_pct": -5.57
   }
 }
