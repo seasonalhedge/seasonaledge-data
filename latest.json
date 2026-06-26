@@ -1,75 +1,75 @@
 {
-  "timestamp": "2026-06-18T18:43:00.767488",
-  "date": "2026-06-18",
-  "spx_last": 7420.11,
+  "timestamp": "2026-06-26T11:51:37.740384",
+  "date": "2026-06-26",
+  "spx_last": 7357.48,
   "core4": {
-    "dealer_positioning": "Neutral",
-    "institutional_flow": "Bearish",
+    "dealer_positioning": "Negative",
+    "institutional_flow": "Neutral",
     "price_range_bias": "Neutral",
     "risk_stance": "Risk Off",
     "option_score": 2,
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": 2.94,
+    "value": -5.05,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7385.42,
+    "level": 7418.21,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7420.11,
-    "status": "above_threshold_stable"
+    "current_spx": 7357.48,
+    "status": "below_threshold"
   },
   "positioning_pulse": {
-    "z_score": -1.0,
+    "z_score": -0.3,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
-    "direction": "bearish",
-    "cta_positioning": "short"
+    "direction": "neutral",
+    "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7330.0,
-    "ceiling": 7578.0,
+    "floor": 7254.0,
+    "ceiling": 7513.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 3.34,
-    "headroom_pct": 2.13
+    "band_width_pct": 3.52,
+    "headroom_pct": 2.11
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-06-25",
-        "event": "Core PCE Price Index MoM",
+        "date": "2026-06-30",
+        "event": "JOLTs Job Openings",
         "impact": "high",
-        "call_iv": 22.32,
-        "put_iv": 19.9,
-        "expected_move_pct": 2.47,
+        "call_iv": 24.88,
+        "put_iv": 17.77,
+        "expected_move_pct": 1.93,
         "iv_skew": "calls_favored"
       },
       {
-        "date": "2026-06-25",
-        "event": "GDP Growth Rate QoQ Final",
+        "date": "2026-07-01",
+        "event": "ISM Manufacturing PMI",
         "impact": "high",
-        "call_iv": 22.32,
-        "put_iv": 19.9,
-        "expected_move_pct": 2.47,
+        "call_iv": 24.73,
+        "put_iv": 17.59,
+        "expected_move_pct": 2.21,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 30,
-    "pct_above_50d_ma": 45,
-    "pct_above_200d_ma": 55,
-    "momentum_health": "oversold",
+    "pct_above_20d_ma": 60,
+    "pct_above_50d_ma": 65,
+    "pct_above_200d_ma": 70,
+    "momentum_health": "neutral",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 5.2,
+    "leader_upside_pct": 7.25,
     "laggard": "XLK",
-    "laggard_downside_pct": -5.57
+    "laggard_downside_pct": -7.31
   }
 }
