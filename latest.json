@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-06T09:42:23.405492",
+  "timestamp": "2026-07-06T15:06:09.600165",
   "date": "2026-07-06",
   "spx_last": 7483.24,
   "core4": {
@@ -59,9 +59,9 @@
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 70,
+    "pct_above_20d_ma": 71,
     "pct_above_50d_ma": 65,
-    "pct_above_200d_ma": 72,
+    "pct_above_200d_ma": 70,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
@@ -69,7 +69,7 @@
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
     "leader_upside_pct": 7.39,
-    "laggard": "GLD",
-    "laggard_downside_pct": -4.75
+    "laggard": "XLK",
+    "laggard_downside_pct": -4.99
   }
 }
