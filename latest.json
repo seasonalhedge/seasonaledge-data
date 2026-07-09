@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-07-06T15:06:09.600165",
-  "date": "2026-07-06",
-  "spx_last": 7483.24,
+  "timestamp": "2026-07-08T20:03:29.723766",
+  "date": "2026-07-08",
+  "spx_last": 7503.85,
   "core4": {
     "dealer_positioning": "Positive",
     "institutional_flow": "Bullish",
@@ -11,65 +11,65 @@
     "regime": "BULLISH"
   },
   "seasonal_strength": {
-    "value": 3.6,
+    "value": 4.22,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "moderate_suppression"
   },
   "price_threshold": {
-    "level": 7439.77,
+    "level": 7452.92,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7483.24,
+    "current_spx": 7503.85,
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.6,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bullish",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7359.0,
-    "ceiling": 7583.0,
+    "floor": 7400.0,
+    "ceiling": 7616.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.99,
-    "headroom_pct": 1.33
+    "band_width_pct": 2.88,
+    "headroom_pct": 1.49
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-07-06",
-        "event": "ISM Services PMI",
-        "impact": "high",
-        "call_iv": 9.66,
-        "put_iv": 19.02,
-        "expected_move_pct": 0.74,
-        "iv_skew": "puts_favored"
-      },
-      {
         "date": "2026-07-08",
         "event": "FOMC Minutes",
         "impact": "high",
-        "call_iv": 11.72,
-        "put_iv": 15.52,
-        "expected_move_pct": 1.23,
+        "call_iv": 11.75,
+        "put_iv": 12.64,
+        "expected_move_pct": 0.63,
+        "iv_skew": "puts_favored"
+      },
+      {
+        "date": "2026-07-09",
+        "event": "Existing Home Sales",
+        "impact": "high",
+        "call_iv": 11.92,
+        "put_iv": 12.27,
+        "expected_move_pct": 0.89,
         "iv_skew": "puts_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 71,
-    "pct_above_50d_ma": 65,
-    "pct_above_200d_ma": 70,
+    "pct_above_20d_ma": 57,
+    "pct_above_50d_ma": 60,
+    "pct_above_200d_ma": 68,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 7.39,
+    "leader_upside_pct": 7.64,
     "laggard": "XLK",
-    "laggard_downside_pct": -4.99
+    "laggard_downside_pct": 6.02
   }
 }
