@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-15T09:36:37.482670",
+  "timestamp": "2026-07-15T10:10:54.248162",
   "date": "2026-07-14",
   "spx_last": 7515.34,
   "gamma": {
@@ -12,15 +12,15 @@
     "flip_distance_implied_moves": 0.7063858932170979
   },
   "gamma_metrics": {
-    "distance_z": 0.0,
-    "distance_ready": false,
-    "velocity_z": 0.0,
-    "velocity_ready": false,
-    "history_count": 50,
-    "distance_observation_count": 50,
-    "velocity_observation_count": 30,
-    "velocity_5d_z": 0.0,
-    "velocity_20d_z": 0.0,
+    "distance_z": -0.6613,
+    "distance_ready": true,
+    "velocity_z": -0.0386,
+    "velocity_ready": true,
+    "history_count": 80,
+    "distance_observation_count": 60,
+    "velocity_observation_count": 60,
+    "velocity_5d_z": -0.066,
+    "velocity_20d_z": -0.0113,
     "throttle_change_5d": -1.08,
     "throttle_change_20d": 4.65
   },
@@ -29,7 +29,7 @@
     "institutional_flow": "Bullish",
     "price_range_bias": "Neutral",
     "risk_stance": "Risk On",
-    "option_score": 4,
+    "option_score": 5,
     "regime": "BULLISH"
   },
   "seasonal_strength": {
@@ -44,7 +44,7 @@
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 1.1,
+    "z_score": 0.8,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bullish",
     "cta_positioning": "long"
@@ -83,7 +83,7 @@
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
     "pct_above_20d_ma": 65,
     "pct_above_50d_ma": 60,
-    "pct_above_200d_ma": 70,
+    "pct_above_200d_ma": 68,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
