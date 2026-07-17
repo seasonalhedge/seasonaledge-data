@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-17T12:00:04.107561",
+  "timestamp": "2026-07-17T12:06:46.282374",
   "date": "2026-07-17",
   "spx_last": 7533.77,
   "gamma": {
@@ -35,7 +35,7 @@
   "seasonal_strength": {
     "value": 4.03,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
-    "interpretation": "moderate_suppression"
+    "interpretation": "strong_suppression"
   },
   "price_threshold": {
     "level": 7484.53,
@@ -44,7 +44,7 @@
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.15,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long"
@@ -60,8 +60,53 @@
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
+        "date": "2026-07-17",
+        "event": "Building Permits Prel",
+        "impact": "high",
+        "call_iv": 11.63,
+        "put_iv": 17.33,
+        "expected_move_pct": 0.75,
+        "iv_skew": "puts_favored"
+      },
+      {
+        "date": "2026-07-17",
+        "event": "Housing Starts",
+        "impact": "high",
+        "call_iv": 11.63,
+        "put_iv": 17.33,
+        "expected_move_pct": 0.75,
+        "iv_skew": "puts_favored"
+      },
+      {
+        "date": "2026-07-17",
+        "event": "Michigan Consumer Sentiment Prel",
+        "impact": "high",
+        "call_iv": 11.63,
+        "put_iv": 17.33,
+        "expected_move_pct": 0.75,
+        "iv_skew": "puts_favored"
+      },
+      {
+        "date": "2026-07-27",
+        "event": "Durable Goods Orders MoM",
+        "impact": "high",
+        "call_iv": 14.54,
+        "put_iv": 15.01,
+        "expected_move_pct": 2.04,
+        "iv_skew": "puts_favored"
+      },
+      {
         "date": "2026-07-29",
         "event": "Fed Interest Rate Decision",
+        "impact": "high",
+        "call_iv": 15.07,
+        "put_iv": 15.15,
+        "expected_move_pct": 2.37,
+        "iv_skew": "puts_favored"
+      },
+      {
+        "date": "2026-07-29",
+        "event": "Fed Press Conference",
         "impact": "high",
         "call_iv": 15.07,
         "put_iv": 15.15,
@@ -76,13 +121,31 @@
         "put_iv": 15.56,
         "expected_move_pct": 2.58,
         "iv_skew": "calls_favored"
+      },
+      {
+        "date": "2026-07-30",
+        "event": "GDP Growth Rate QoQ Adv",
+        "impact": "high",
+        "call_iv": 15.67,
+        "put_iv": 15.56,
+        "expected_move_pct": 2.58,
+        "iv_skew": "calls_favored"
+      },
+      {
+        "date": "2026-07-30",
+        "event": "Personal Income MoM",
+        "impact": "high",
+        "call_iv": 15.67,
+        "put_iv": 15.56,
+        "expected_move_pct": 2.58,
+        "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 70,
-    "pct_above_50d_ma": 65,
+    "pct_above_20d_ma": 74,
+    "pct_above_50d_ma": 70,
     "pct_above_200d_ma": 72,
     "momentum_health": "neutral",
     "deterioration_risk": false
