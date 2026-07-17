@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-07-16T10:55:15.310735",
-  "date": "2026-07-16",
-  "spx_last": 7572.4,
+  "timestamp": "2026-07-17T11:42:18.742699",
+  "date": "2026-07-17",
+  "spx_last": 7533.77,
   "gamma": {
-    "spx_spot": 7572.4,
-    "throttle": 7.81,
-    "gex_flip": 7478.33,
+    "spx_spot": 7533.77,
+    "throttle": 4.03,
+    "gex_flip": 7484.53,
     "implied_move_pct": 1.26,
-    "flip_distance_points": 94.06999999999971,
-    "flip_distance_pct": 1.2422745760921203,
-    "flip_distance_implied_moves": 0.9859322032477145
+    "flip_distance_points": 49.24000000000069,
+    "flip_distance_pct": 0.653590433474883,
+    "flip_distance_implied_moves": 0.5187225662499071
   },
   "gamma_metrics": {
-    "distance_z": -0.3837,
+    "distance_z": -0.7568,
     "distance_ready": true,
-    "velocity_z": 0.1519,
+    "velocity_z": -0.276,
     "velocity_ready": true,
-    "history_count": 82,
+    "history_count": 83,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": 0.6959,
-    "velocity_20d_z": -0.3922,
-    "throttle_change_5d": 6.01,
-    "throttle_change_20d": -4.84
+    "velocity_5d_z": -0.2345,
+    "velocity_20d_z": -0.3175,
+    "throttle_change_5d": -3.24,
+    "throttle_change_20d": -3.84
   },
   "core4": {
     "dealer_positioning": "Positive",
@@ -33,48 +33,48 @@
     "regime": "BULLISH"
   },
   "seasonal_strength": {
-    "value": 7.81,
+    "value": 4.03,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "moderate_suppression"
   },
   "price_threshold": {
-    "level": 7478.33,
+    "level": 7484.53,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7572.4,
+    "current_spx": 7533.77,
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.5,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7459.0,
-    "ceiling": 7669.0,
+    "floor": 7455.0,
+    "ceiling": 7665.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.77,
-    "headroom_pct": 1.28
+    "band_width_pct": 2.79,
+    "headroom_pct": 1.74
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-07-27",
-        "event": "Durable Goods Orders MoM",
-        "impact": "high",
-        "call_iv": 13.18,
-        "put_iv": 11.89,
-        "expected_move_pct": 1.85,
-        "iv_skew": "calls_favored"
-      },
-      {
         "date": "2026-07-29",
         "event": "Fed Interest Rate Decision",
         "impact": "high",
-        "call_iv": 13.89,
-        "put_iv": 12.37,
-        "expected_move_pct": 2.17,
+        "call_iv": 15.07,
+        "put_iv": 15.15,
+        "expected_move_pct": 2.37,
+        "iv_skew": "puts_favored"
+      },
+      {
+        "date": "2026-07-30",
+        "event": "Core PCE Price Index MoM",
+        "impact": "high",
+        "call_iv": 15.67,
+        "put_iv": 15.56,
+        "expected_move_pct": 2.58,
         "iv_skew": "calls_favored"
       }
     ]
@@ -90,8 +90,8 @@
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 4.43,
-    "laggard": "XLK",
-    "laggard_downside_pct": -4.36
+    "leader_upside_pct": 5.57,
+    "laggard": "XLB",
+    "laggard_downside_pct": -3.86
   }
 }
