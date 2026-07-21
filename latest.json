@@ -1,97 +1,97 @@
 {
-  "timestamp": "2026-07-17T12:16:31.276649",
-  "date": "2026-07-17",
-  "spx_last": 7533.77,
+  "timestamp": "2026-07-21T12:05:08.327832",
+  "date": "2026-07-21",
+  "spx_last": 7443.28,
   "gamma": {
-    "spx_spot": 7533.77,
-    "throttle": 4.03,
-    "gex_flip": 7484.53,
+    "spx_spot": 7443.28,
+    "throttle": -2.13,
+    "gex_flip": 7468.95,
     "implied_move_pct": 1.26,
-    "flip_distance_points": 49.24000000000069,
-    "flip_distance_pct": 0.653590433474883,
-    "flip_distance_implied_moves": 0.5187225662499071
+    "flip_distance_points": -25.670000000000073,
+    "flip_distance_pct": -0.3448748401242473,
+    "flip_distance_implied_moves": -0.27371019057479945
   },
   "gamma_metrics": {
-    "distance_z": -0.7568,
+    "distance_z": -1.3837,
     "distance_ready": true,
-    "velocity_z": -0.276,
+    "velocity_z": -0.7495,
     "velocity_ready": true,
-    "history_count": 83,
+    "history_count": 84,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -0.2345,
-    "velocity_20d_z": -0.3175,
-    "throttle_change_5d": -3.24,
-    "throttle_change_20d": -3.84
+    "velocity_5d_z": -1.1492,
+    "velocity_20d_z": -0.3497,
+    "throttle_change_5d": -12.38,
+    "throttle_change_20d": -5.07
   },
   "core4": {
-    "dealer_positioning": "Positive",
+    "dealer_positioning": "Negative",
     "institutional_flow": "Neutral",
     "price_range_bias": "Neutral",
     "risk_stance": "Risk On",
-    "option_score": 4,
-    "regime": "BULLISH"
+    "option_score": 3,
+    "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": 4.03,
+    "value": -2.13,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
-    "interpretation": "moderate_suppression"
+    "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7484.53,
+    "level": 7468.95,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7533.77,
-    "status": "above_threshold_stable"
+    "current_spx": 7443.28,
+    "status": "approaching_threshold"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.1,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7455.0,
-    "ceiling": 7665.0,
+    "floor": 7370.0,
+    "ceiling": 7612.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.79,
-    "headroom_pct": 1.74
+    "band_width_pct": 3.25,
+    "headroom_pct": 2.27
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
+        "date": "2026-07-27",
+        "event": "Durable Goods Orders MoM",
+        "impact": "high",
+        "call_iv": 16.83,
+        "put_iv": 15.41,
+        "expected_move_pct": 1.88,
+        "iv_skew": "calls_favored"
+      },
+      {
         "date": "2026-07-29",
         "event": "Fed Interest Rate Decision",
         "impact": "high",
-        "call_iv": 15.07,
-        "put_iv": 15.15,
-        "expected_move_pct": 2.37,
-        "iv_skew": "puts_favored"
-      },
-      {
-        "date": "2026-07-30",
-        "event": "Core PCE Price Index MoM",
-        "impact": "high",
-        "call_iv": 15.67,
-        "put_iv": 15.56,
-        "expected_move_pct": 2.58,
+        "call_iv": 17.25,
+        "put_iv": 15.68,
+        "expected_move_pct": 2.28,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 74,
-    "pct_above_50d_ma": 68,
-    "pct_above_200d_ma": 72,
+    "pct_above_20d_ma": 55,
+    "pct_above_50d_ma": 60,
+    "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
-    "deterioration_risk": false
+    "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 5.57,
-    "laggard": "XLB",
-    "laggard_downside_pct": -3.86
+    "leader_upside_pct": 6.54,
+    "laggard": "XLE",
+    "laggard_downside_pct": -3.46
   }
 }
