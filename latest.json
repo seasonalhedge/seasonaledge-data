@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-24T09:32:03.969326",
+  "timestamp": "2026-07-24T09:33:36.518613",
   "date": "2026-07-24",
   "spx_last": 7408.3,
   "gamma": {
@@ -29,7 +29,7 @@
     "institutional_flow": "Neutral",
     "price_range_bias": "Neutral",
     "risk_stance": "Risk On",
-    "option_score": 2,
+    "option_score": 3,
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
