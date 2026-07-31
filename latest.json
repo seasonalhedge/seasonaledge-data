@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-31T15:55:28.796287",
+  "timestamp": "2026-07-31T15:57:53.389429",
   "date": "2026-07-31",
   "spx_last": 7437.63,
   "gamma": {
@@ -41,7 +41,7 @@
     "level": 7461.14,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
     "current_spx": 7437.63,
-    "status": "approaching_threshold"
+    "status": "below_threshold"
   },
   "positioning_pulse": {
     "z_score": -0.8,
