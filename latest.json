@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-04T11:00:23.720110",
+  "timestamp": "2026-08-04T11:01:49.429654",
   "date": "2026-08-04",
   "spx_last": 7600.5,
   "gamma": {
@@ -60,17 +60,17 @@
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-08-05",
-        "event": "ISM Services PMI",
+        "date": "2026-08-07",
+        "event": "Non Farm Payrolls",
         "impact": "high",
-        "call_iv": 10.33,
-        "put_iv": 8.74,
-        "expected_move_pct": 0.7,
+        "call_iv": 11.99,
+        "put_iv": 9.98,
+        "expected_move_pct": 1.15,
         "iv_skew": "calls_favored"
       },
       {
         "date": "2026-08-07",
-        "event": "Non Farm Payrolls",
+        "event": "Unemployment Rate",
         "impact": "high",
         "call_iv": 11.99,
         "put_iv": 9.98,
@@ -85,7 +85,7 @@
     "pct_above_50d_ma": 65,
     "pct_above_200d_ma": 70,
     "momentum_health": "neutral",
-    "deterioration_risk": true
+    "deterioration_risk": false
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
