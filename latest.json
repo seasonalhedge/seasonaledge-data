@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-05T13:38:56.614745",
+  "timestamp": "2026-08-05T13:40:06.157720",
   "date": "2026-08-05",
   "spx_last": 7736.52,
   "gamma": {
@@ -44,7 +44,7 @@
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": -1.0,
+    "z_score": -0.8,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
     "cta_positioning": "long"
