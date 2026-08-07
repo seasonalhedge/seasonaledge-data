@@ -93,5 +93,32 @@
     "leader_upside_pct": 3.6,
     "laggard": "XLK",
     "laggard_downside_pct": -5.3
+  },
+  "flow_valuation_model": {
+    "spx_price": 7683.42,
+    "observed_pe": 28.46,
+    "structural_pe": 20.69,
+    "state_premium": 0.41,
+    "velocity_premium": 0.29,
+    "belief_premium": 7.06,
+    "implied_narrative": 7.35,
+    "liquidity_state": 70.1,
+    "mechanics_state": 49.0,
+    "innovation_state": 33.2,
+    "liquidity_velocity": -0.17,
+    "mechanics_velocity": -0.57,
+    "innovation_velocity": 0.4,
+    "productivity_velocity": 1.2,
+    "gamma_throttle": 14.29,
+    "gamma_flip_level": 7536.17,
+    "gamma_distance_z": 0.72,
+    "gamma_velocity_z": 1.25,
+    "dspx_final": -0.35,
+    "dspx_stretch_z": -2.73,
+    "dbmf": -3.0,
+    "valuation_state": "RED/PLATFORM_PREMIUM",
+    "mechanical_state": "NEUTRAL",
+    "liquidity_state_label": "EXPANSION",
+    "innovation_state_label": "NEUTRAL"
   }
 }
