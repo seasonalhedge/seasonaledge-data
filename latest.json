@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T12:59:21.188371",
+  "timestamp": "2026-08-07T13:05:09.594464",
   "date": "2026-08-07",
   "spx_last": 7709.96,
   "gamma": {
@@ -44,7 +44,7 @@
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": -0.1,
+    "z_score": -0.3,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long"
@@ -81,16 +81,16 @@
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 55,
-    "pct_above_50d_ma": 60,
+    "pct_above_20d_ma": 40,
+    "pct_above_50d_ma": 55,
     "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
-    "leader": "XLK",
-    "leader_upside_pct": 3.47,
+    "leader": "XLU",
+    "leader_upside_pct": 3.6,
     "laggard": "XLK",
     "laggard_downside_pct": -5.3
   }
