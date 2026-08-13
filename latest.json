@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-13T12:13:56.850110",
+  "timestamp": "2026-08-13T12:15:13.532469",
   "date": "2026-08-12",
   "spx_last": 7728.2,
   "gamma": {
@@ -35,7 +35,7 @@
   "seasonal_strength": {
     "value": 11.19,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
-    "interpretation": "strong_suppression"
+    "interpretation": "moderate_suppression"
   },
   "price_threshold": {
     "level": 7590.87,
@@ -61,7 +61,7 @@
     "events": [
       {
         "date": "2026-08-12",
-        "event": "Core Inflation Rate MoM",
+        "event": "Core Inflation Rate YoY",
         "impact": "high",
         "call_iv": 14.63,
         "put_iv": 13.38,
@@ -83,7 +83,7 @@
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
     "pct_above_20d_ma": 55,
     "pct_above_50d_ma": 60,
-    "pct_above_200d_ma": 70,
+    "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
