@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-21T11:13:04.696995",
+  "timestamp": "2026-08-21T11:14:13.192165",
   "date": "2026-08-21",
   "spx_last": 7641.16,
   "gamma": {
@@ -85,7 +85,7 @@
     "pct_above_50d_ma": 65,
     "pct_above_200d_ma": 70,
     "momentum_health": "neutral",
-    "deterioration_risk": true
+    "deterioration_risk": false
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
