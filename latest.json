@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-18T12:11:59.608348",
-  "date": "2026-08-18",
-  "spx_last": 7745.06,
+  "timestamp": "2026-08-20T22:11:59.832798",
+  "date": "2026-08-19",
+  "spx_last": 7691.76,
   "gamma": {
-    "spx_spot": 7745.06,
-    "throttle": 9.41,
-    "gex_flip": 7629.23,
+    "spx_spot": 7691.76,
+    "throttle": 3.46,
+    "gex_flip": 7649.49,
     "implied_move_pct": 1.26,
-    "flip_distance_points": 115.83000000000084,
-    "flip_distance_pct": 1.4955339274324644,
-    "flip_distance_implied_moves": 1.1869316884384638
+    "flip_distance_points": 42.27000000000044,
+    "flip_distance_pct": 0.549549127897912,
+    "flip_distance_implied_moves": 0.4361501015062794
   },
   "gamma_metrics": {
-    "distance_z": 0.3316,
+    "distance_z": -0.3129,
     "distance_ready": true,
-    "velocity_z": 0.3864,
+    "velocity_z": -0.1589,
     "velocity_ready": true,
-    "history_count": 105,
+    "history_count": 106,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -0.4263,
-    "velocity_20d_z": 1.1991,
-    "throttle_change_5d": -5.06,
-    "throttle_change_20d": 11.54
+    "velocity_5d_z": -0.6674,
+    "velocity_20d_z": 0.3495,
+    "throttle_change_5d": -7.73,
+    "throttle_change_20d": 0.63
   },
   "core4": {
     "dealer_positioning": "Positive",
@@ -33,14 +33,14 @@
     "regime": "BULLISH"
   },
   "seasonal_strength": {
-    "value": 9.41,
+    "value": 3.46,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
-    "interpretation": "strong_suppression"
+    "interpretation": "moderate_suppression"
   },
   "price_threshold": {
-    "level": 7629.23,
+    "level": 7649.49,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7745.06,
+    "current_spx": 7691.76,
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
@@ -50,11 +50,11 @@
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7681.0,
-    "ceiling": 7867.0,
+    "floor": 7655.0,
+    "ceiling": 7851.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.4,
-    "headroom_pct": 1.57
+    "band_width_pct": 2.55,
+    "headroom_pct": 2.07
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
@@ -63,79 +63,35 @@
         "date": "2026-08-19",
         "event": "FOMC Minutes",
         "impact": "high",
-        "call_iv": 9.66,
-        "put_iv": 8.49,
-        "expected_move_pct": 0.67,
+        "call_iv": 11.42,
+        "put_iv": 9.37,
+        "expected_move_pct": 0.54,
         "iv_skew": "calls_favored"
       },
       {
         "date": "2026-08-26",
         "event": "Core PCE Price Index MoM",
         "impact": "high",
-        "call_iv": 11.43,
-        "put_iv": 10.05,
-        "expected_move_pct": 1.49,
+        "call_iv": 12.65,
+        "put_iv": 10.86,
+        "expected_move_pct": 1.5,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 75,
+    "pct_above_20d_ma": 70,
     "pct_above_50d_ma": 65,
-    "pct_above_200d_ma": 70,
+    "pct_above_200d_ma": 72,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
-    "leader": "XLY",
-    "leader_upside_pct": 3.51,
+    "leader": "XLK",
+    "leader_upside_pct": 4.32,
     "laggard": "XLE",
-    "laggard_downside_pct": -4.3
-  },
-  "flow_valuation_model": {
-    "spx_price": 7738.89,
-    "observed_pe": 28.66,
-    "structural_pe": 20.73,
-    "state_fair_pe": 21.6,
-    "modeled_fair_pe": 21.82,
-    "seasonaledge_premium": 6.84,
-    "implied_narrative_turns": 7.06,
-    "narrative_state": "EARLY PLATFORM CYCLE",
-    "historical_analog": "2026 AI Platform Cycle",
-    "se_premium_state": "PLATFORM PREMIUM",
-    "valuation_state": "RED",
-    "liquidity_state": 1.67,
-    "liquidity_score": 73.9,
-    "liquidity_regime": "EXPANSION",
-    "mechanical_state": -0.16,
-    "mechanical_score": 47.3,
-    "mechanical_regime": "NEUTRAL",
-    "mechanical_velocity": -0.37,
-    "innovation_state": -0.71,
-    "innovation_score": 38.2,
-    "innovation_state_label": "NEUTRAL",
-    "innovation_velocity": 0.35,
-    "dxy_interaction": 0.08,
-    "state_premium": 0.8,
-    "velocity_premium": 0.22,
-    "liquidity_velocity": -0.24,
-    "productivity_velocity": 0.87,
-    "gamma_throttle": 9.41,
-    "gamma_intensity": 0.94,
-    "gamma_flip": 7629.23,
-    "gamma_distance_z": 0.33,
-    "gamma_velocity_z": 0.39,
-    "dspx_final_turns": -0.9,
-    "dspx_stretch_z": -1.28,
-    "dspx_velocity_z": -1.25,
-    "dbmf_turns": -1.38,
-    "dbmf_velocity_z": -0.36,
-    "vix_z": -0.78,
-    "liquidity_stretch_z": null,
-    "liquidity_stretch_state": null,
-    "fvm_version": "v13.2",
-    "fvm_snapshot_time": "2026-08-18T12:20:09Z"
+    "laggard_downside_pct": -4.39
   }
 }
