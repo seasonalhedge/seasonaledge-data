@@ -1,60 +1,60 @@
 {
-  "timestamp": "2026-08-20T22:17:10.830238",
-  "date": "2026-08-20",
-  "spx_last": 7707.98,
+  "timestamp": "2026-08-21T11:13:04.696995",
+  "date": "2026-08-21",
+  "spx_last": 7641.16,
   "gamma": {
-    "spx_spot": 7707.98,
-    "throttle": 4.69,
-    "gex_flip": 7649.55,
+    "spx_spot": 7641.16,
+    "throttle": -0.55,
+    "gex_flip": 7648.5,
     "implied_move_pct": 1.26,
-    "flip_distance_points": 58.42999999999938,
-    "flip_distance_pct": 0.7580455579801633,
-    "flip_distance_implied_moves": 0.6016234587144152
+    "flip_distance_points": -7.3400000000001455,
+    "flip_distance_pct": -0.09605871359846078,
+    "flip_distance_implied_moves": -0.07623707428449268
   },
   "gamma_metrics": {
-    "distance_z": -0.141,
+    "distance_z": -0.733,
     "distance_ready": true,
-    "velocity_z": -0.0494,
+    "velocity_z": -0.3112,
     "velocity_ready": true,
-    "history_count": 107,
+    "history_count": 108,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -0.6257,
-    "velocity_20d_z": 0.5268,
-    "throttle_change_5d": -7.49,
-    "throttle_change_20d": 2.96
+    "velocity_5d_z": -1.2868,
+    "velocity_20d_z": 0.6645,
+    "throttle_change_5d": -15.42,
+    "throttle_change_20d": 4.73
   },
   "core4": {
-    "dealer_positioning": "Positive",
+    "dealer_positioning": "Neutral",
     "institutional_flow": "Neutral",
     "price_range_bias": "Neutral",
     "risk_stance": "Risk On",
-    "option_score": 4,
-    "regime": "BULLISH"
+    "option_score": 3,
+    "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": 4.69,
+    "value": -0.55,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
-    "interpretation": "moderate_suppression"
+    "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7649.55,
+    "level": 7648.5,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7707.98,
-    "status": "above_threshold_stable"
+    "current_spx": 7641.16,
+    "status": "approaching_threshold"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.1,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7652.0,
-    "ceiling": 7834.0,
+    "floor": 7619.0,
+    "ceiling": 7812.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.36,
-    "headroom_pct": 1.63
+    "band_width_pct": 2.53,
+    "headroom_pct": 2.24
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
@@ -63,35 +63,35 @@
         "date": "2026-08-26",
         "event": "Core PCE Price Index MoM",
         "impact": "high",
-        "call_iv": 11.72,
-        "put_iv": 10.35,
-        "expected_move_pct": 1.29,
+        "call_iv": 14.11,
+        "put_iv": 12.3,
+        "expected_move_pct": 1.38,
         "iv_skew": "calls_favored"
       },
       {
         "date": "2026-08-26",
         "event": "GDP Growth Rate QoQ 2nd Est",
         "impact": "high",
-        "call_iv": 11.72,
-        "put_iv": 10.35,
-        "expected_move_pct": 1.29,
+        "call_iv": 14.11,
+        "put_iv": 12.3,
+        "expected_move_pct": 1.38,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 70,
+    "pct_above_20d_ma": 60,
     "pct_above_50d_ma": 65,
-    "pct_above_200d_ma": 72,
+    "pct_above_200d_ma": 70,
     "momentum_health": "neutral",
-    "deterioration_risk": false
+    "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 4.35,
-    "laggard": "XLV",
-    "laggard_downside_pct": -4.57
+    "leader_upside_pct": 4.14,
+    "laggard": "GLD",
+    "laggard_downside_pct": -4.08
   }
 }
