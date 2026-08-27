@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-26T09:30:55.219916",
-  "date": "2026-08-26",
-  "spx_last": 7677.28,
+  "timestamp": "2026-08-27T10:08:38.251394",
+  "date": "2026-08-27",
+  "spx_last": 7675.7,
   "gamma": {
-    "spx_spot": 7677.28,
-    "throttle": 1.88,
-    "gex_flip": 7654.37,
+    "spx_spot": 7675.7,
+    "throttle": 2.89,
+    "gex_flip": 7640.47,
     "implied_move_pct": 1.26,
-    "flip_distance_points": 22.909999999999854,
-    "flip_distance_pct": 0.2984129795969387,
-    "flip_distance_implied_moves": 0.23683569809280852
+    "flip_distance_points": 35.22999999999956,
+    "flip_distance_pct": 0.4589809398491286,
+    "flip_distance_implied_moves": 0.36427058718184807
   },
   "gamma_metrics": {
-    "distance_z": -0.3591,
+    "distance_z": -0.1981,
     "distance_ready": true,
-    "velocity_z": 0.3534,
+    "velocity_z": 0.6963,
     "velocity_ready": true,
-    "history_count": 111,
+    "history_count": 112,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -0.0029,
-    "velocity_20d_z": 0.7097,
-    "throttle_change_5d": -1.58,
-    "throttle_change_20d": 5.21
+    "velocity_5d_z": -0.0135,
+    "velocity_20d_z": 1.406,
+    "throttle_change_5d": -1.8,
+    "throttle_change_20d": 14.5
   },
   "core4": {
     "dealer_positioning": "Neutral",
@@ -33,55 +33,55 @@
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": 1.88,
+    "value": 2.89,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
-    "interpretation": "moderate_suppression"
+    "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7654.37,
+    "level": 7640.47,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7677.28,
+    "current_spx": 7675.7,
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.0,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7579.0,
+    "floor": 7561.0,
     "ceiling": 7800.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.88,
-    "headroom_pct": 1.6
+    "band_width_pct": 3.11,
+    "headroom_pct": 1.62
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-08-26",
-        "event": "Core PCE Price Index MoM",
+        "date": "2026-08-28",
+        "event": "Fed Chair Warsh Speech",
         "impact": "high",
-        "call_iv": 9.57,
-        "put_iv": 9.3,
-        "expected_move_pct": 0.49,
+        "call_iv": 18.41,
+        "put_iv": 11.41,
+        "expected_move_pct": 1.1,
         "iv_skew": "calls_favored"
       },
       {
-        "date": "2026-08-26",
-        "event": "GDP Growth Rate QoQ 2nd Est",
+        "date": "2026-08-28",
+        "event": "Non Farm Payrolls Annual Revision Prel",
         "impact": "high",
-        "call_iv": 9.57,
-        "put_iv": 9.3,
-        "expected_move_pct": 0.49,
+        "call_iv": 18.41,
+        "put_iv": 11.41,
+        "expected_move_pct": 1.1,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 55,
+    "pct_above_20d_ma": 57,
     "pct_above_50d_ma": 60,
     "pct_above_200d_ma": 70,
     "momentum_health": "neutral",
@@ -89,9 +89,9 @@
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
-    "leader": "XLE",
-    "leader_upside_pct": 4.52,
-    "laggard": "GLD",
-    "laggard_downside_pct": -4.41
+    "leader": "GLD",
+    "leader_upside_pct": 3.59,
+    "laggard": "XLU",
+    "laggard_downside_pct": -3.6
   }
 }
