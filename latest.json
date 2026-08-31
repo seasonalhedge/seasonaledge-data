@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-31T09:54:42.751845",
+  "timestamp": "2026-08-31T09:55:40.374605",
   "date": "2026-08-31",
   "spx_last": 7711.76,
   "gamma": {
@@ -83,7 +83,7 @@
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
     "pct_above_20d_ma": 55,
     "pct_above_50d_ma": 60,
-    "pct_above_200d_ma": 70,
+    "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
