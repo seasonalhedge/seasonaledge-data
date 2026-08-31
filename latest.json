@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-28T15:18:55.952938",
-  "date": "2026-08-28",
-  "spx_last": 7730.99,
+  "timestamp": "2026-08-31T09:54:42.751845",
+  "date": "2026-08-31",
+  "spx_last": 7711.76,
   "gamma": {
-    "spx_spot": 7730.99,
-    "throttle": 7.04,
-    "gex_flip": 7644.44,
+    "spx_spot": 7711.76,
+    "throttle": 4.91,
+    "gex_flip": 7651.13,
     "implied_move_pct": 1.26,
-    "flip_distance_points": 86.55000000000018,
-    "flip_distance_pct": 1.1195202684261678,
-    "flip_distance_implied_moves": 0.8885081495445776
+    "flip_distance_points": 60.63000000000011,
+    "flip_distance_pct": 0.7862018527547552,
+    "flip_distance_implied_moves": 0.6239697244085358
   },
   "gamma_metrics": {
-    "distance_z": 0.3996,
+    "distance_z": 0.1356,
     "distance_ready": true,
-    "velocity_z": 0.8887,
+    "velocity_z": 0.4714,
     "velocity_ready": true,
-    "history_count": 113,
+    "history_count": 114,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": 0.8042,
-    "velocity_20d_z": 0.9731,
-    "throttle_change_5d": 7.59,
-    "throttle_change_20d": 8.98
+    "velocity_5d_z": 0.4108,
+    "velocity_20d_z": 0.5319,
+    "throttle_change_5d": 3.26,
+    "throttle_change_20d": 3.36
   },
   "core4": {
     "dealer_positioning": "Positive",
@@ -33,92 +33,65 @@
     "regime": "BULLISH"
   },
   "seasonal_strength": {
-    "value": 7.04,
+    "value": 4.91,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "moderate_suppression"
   },
   "price_threshold": {
-    "level": 7644.44,
+    "level": 7651.13,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7730.99,
+    "current_spx": 7711.76,
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 0.3,
+    "z_score": 0.5,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7597.0,
-    "ceiling": 7808.0,
+    "floor": 7600.0,
+    "ceiling": 7804.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 2.73,
-    "headroom_pct": 1.0
+    "band_width_pct": 2.65,
+    "headroom_pct": 1.2
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-08-28",
-        "event": "Fed Chair Warsh Speech",
-        "impact": "high",
-        "call_iv": 10.94,
-        "put_iv": 15.4,
-        "expected_move_pct": 0.68,
-        "iv_skew": "puts_favored"
-      },
-      {
         "date": "2026-09-01",
         "event": "ISM Manufacturing PMI",
         "impact": "high",
-        "call_iv": 10.88,
-        "put_iv": 13.26,
-        "expected_move_pct": 1.09,
+        "call_iv": 9.96,
+        "put_iv": 10.89,
+        "expected_move_pct": 0.77,
         "iv_skew": "puts_favored"
+      },
+      {
+        "date": "2026-09-04",
+        "event": "Non Farm Payrolls",
+        "impact": "high",
+        "call_iv": 11.42,
+        "put_iv": 11.13,
+        "expected_move_pct": 1.32,
+        "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 60,
-    "pct_above_50d_ma": 55,
-    "pct_above_200d_ma": 65,
+    "pct_above_20d_ma": 55,
+    "pct_above_50d_ma": 60,
+    "pct_above_200d_ma": 70,
     "momentum_health": "neutral",
     "deterioration_risk": false
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
-    "leader": "XLY",
-    "leader_upside_pct": 3.43,
+    "leader": "GLD",
+    "leader_upside_pct": 5.57,
     "laggard": "XLK",
-    "laggard_downside_pct": -5.37
-  },
-  "flow_valuation_model": {
-    "spx_price": 7700.6,
-    "observed_pe": 28.52,
-    "structural_pe": 20.86,
-    "state_premium": 0.91,
-    "velocity_premium": 0.3,
-    "belief_premium": 6.43,
-    "implied_narrative": 6.73,
-    "liquidity_state": 61.7,
-    "mechanics_state": 46.4,
-    "innovation_state": 55.0,
-    "liquidity_velocity": -0.17,
-    "mechanics_velocity": -0.08,
-    "innovation_velocity": 0.38,
-    "productivity_velocity": 0.87,
-    "gamma_throttle": 7.04,
-    "gamma_flip_level": 7644.44,
-    "gamma_distance_z": 0.4,
-    "gamma_velocity_z": 0.89,
-    "dspx_final": -1.25,
-    "dspx_stretch_z": -1.34,
-    "dbmf": -0.85,
-    "valuation_state": "RED/PLATFORM_PREMIUM",
-    "mechanical_state": "NEUTRAL",
-    "liquidity_state_label": "SUPPORTIVE",
-    "innovation_state_label": "NEUTRAL"
+    "laggard_downside_pct": -3.16
   }
 }
