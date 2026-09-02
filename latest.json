@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T01:45:20.749750Z",
+  "timestamp": "2026-09-02T01:46:45.447811Z",
   "date": "2026-09-01",
   "spx_last": 7686.14,
   "gamma": {
@@ -60,21 +60,21 @@
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
+        "date": "2026-09-01",
+        "event": "ISM Manufacturing PMI",
+        "impact": "high",
+        "call_iv": 11.62,
+        "put_iv": 8.53,
+        "expected_move_pct": 0.52,
+        "iv_skew": "calls_favored"
+      },
+      {
         "date": "2026-09-04",
         "event": "Non Farm Payrolls",
         "impact": "high",
         "call_iv": 12.65,
         "put_iv": 10.1,
         "expected_move_pct": 1.19,
-        "iv_skew": "calls_favored"
-      },
-      {
-        "date": "2026-09-11",
-        "event": "Core Inflation Rate MoM",
-        "impact": "high",
-        "call_iv": 13.91,
-        "put_iv": 11.33,
-        "expected_move_pct": 1.87,
         "iv_skew": "calls_favored"
       }
     ]
@@ -83,7 +83,7 @@
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
     "pct_above_20d_ma": 55,
     "pct_above_50d_ma": 60,
-    "pct_above_200d_ma": 70,
+    "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
     "deterioration_risk": true
   },
