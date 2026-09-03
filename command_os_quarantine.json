@@ -1,0 +1,1 @@
+{"schema":"se.command_os.v1","regime":"WINTER","composite":20,"core4_risk":100,"regime_risk":100,"trans_prob":0,"tactical":"CASCADE","received_at":1788429462,"quarantine_reason":"floor+ceiling signature (composite=20.0, core4_risk=100.0, regime_risk=100.0, trans_prob=0.0)","quarantined_at":1788429462}
