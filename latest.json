@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-04T13:16:12.543646Z",
+  "timestamp": "2026-09-04T13:17:16.098431Z",
   "date": "2026-09-04",
   "spx_last": 7747.71,
   "gamma": {
@@ -44,9 +44,9 @@
     "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": 0.5,
+    "z_score": 0.6,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
-    "direction": "neutral",
+    "direction": "bullish",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
@@ -82,7 +82,7 @@
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
     "pct_above_20d_ma": 68,
-    "pct_above_50d_ma": 65,
+    "pct_above_50d_ma": 62,
     "pct_above_200d_ma": 72,
     "momentum_health": "neutral",
     "deterioration_risk": false
