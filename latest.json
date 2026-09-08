@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-08T14:58:54.595413Z",
+  "timestamp": "2026-09-08T14:59:48.838131Z",
   "date": "2026-09-08",
   "spx_last": 7718.6,
   "gamma": {
@@ -29,7 +29,7 @@
     "institutional_flow": "Bullish",
     "price_range_bias": "Neutral",
     "risk_stance": "Risk On",
-    "option_score": 5,
+    "option_score": 4,
     "regime": "BULLISH"
   },
   "seasonal_strength": {
