@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-10T19:43:15.845997Z",
+  "updated_at": "2026-09-10T20:01:56.510419Z",
   "history_count": 121,
   "published_count": 121,
   "gamma_metrics": {
-    "distance_z": -0.9209,
+    "distance_z": -0.9172,
     "distance_ready": true,
     "velocity_z": -0.533,
     "velocity_ready": true,
@@ -1220,11 +1220,11 @@
       "date": "2026-09-10",
       "spx_spot": 7636.36,
       "gamma_throttle": -2.07,
-      "gex_flip": 7662.0,
+      "gex_flip": 7661.69,
       "implied_move_pct": 1.26,
-      "flip_distance_points": -25.640000000000327,
-      "flip_distance_pct": -0.33576206464860653,
-      "flip_distance_implied_moves": -0.2664778290861956
+      "flip_distance_points": -25.329999999999927,
+      "flip_distance_pct": -0.33170253890596996,
+      "flip_distance_implied_moves": -0.2632559832587063
     }
   ]
 }
