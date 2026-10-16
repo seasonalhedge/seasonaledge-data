@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15T13:23:09.832649Z",
+  "timestamp": "2026-10-16T13:21:50.641685Z",
   "date": "2026-10-16",
   "spx_last": 7718.94,
   "gamma": {
@@ -47,7 +47,7 @@
     "z_score": -1.0,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
-    "cta_positioning": "short"
+    "cta_positioning": "long"
   },
   "seasonal_bands": {
     "floor": 7662.0,
