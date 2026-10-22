@@ -1,60 +1,60 @@
 {
-  "timestamp": "2026-10-21T16:57:51.450197Z",
+  "timestamp": "2026-10-22T16:11:55.439015Z",
   "date": "2026-10-21",
-  "spx_last": 7712.57,
+  "spx_last": 7757.17,
   "gamma": {
-    "spx_spot": 7712.57,
-    "throttle": -1.16,
-    "gex_flip": 7726.74,
+    "spx_spot": 7757.17,
+    "throttle": 2.66,
+    "gex_flip": 7724.38,
     "implied_move_pct": 1.26,
-    "flip_distance_points": -14.170000000000073,
-    "flip_distance_pct": -0.18372604721902133,
-    "flip_distance_implied_moves": -0.14581432318969947
+    "flip_distance_points": 32.789999999999964,
+    "flip_distance_pct": 0.42270570323971196,
+    "flip_distance_implied_moves": 0.3354807168569143
   },
   "gamma_metrics": {
-    "distance_z": -0.7745,
+    "distance_z": -0.209,
     "distance_ready": true,
-    "velocity_z": -1.015,
+    "velocity_z": -0.6134,
     "velocity_ready": true,
     "history_count": 149,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -0.8416,
-    "velocity_20d_z": -1.1884,
-    "throttle_change_5d": -7.51,
-    "throttle_change_20d": -11.1
+    "velocity_5d_z": -0.425,
+    "velocity_20d_z": -0.8019,
+    "throttle_change_5d": -3.69,
+    "throttle_change_20d": -7.28
   },
   "core4": {
     "dealer_positioning": "Neutral",
     "institutional_flow": "Bearish",
-    "price_range_bias": "Long",
+    "price_range_bias": "Neutral",
     "risk_stance": "Risk On",
-    "option_score": 3,
+    "option_score": 2,
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": -1.16,
+    "value": 2.66,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7726.74,
+    "level": 7724.38,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7712.57,
-    "status": "approaching_threshold"
+    "current_spx": 7757.17,
+    "status": "above_threshold_stable"
   },
   "positioning_pulse": {
-    "z_score": -1.0,
+    "z_score": -1.2,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
     "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7578.0,
-    "ceiling": 7838.0,
+    "floor": 7609.0,
+    "ceiling": 7854.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 3.37,
-    "headroom_pct": 1.63
+    "band_width_pct": 3.16,
+    "headroom_pct": 1.25
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
@@ -63,26 +63,26 @@
         "date": "2026-10-27",
         "event": "Durable Goods Orders MoM",
         "impact": "high",
-        "call_iv": 16.49,
-        "put_iv": 11.99,
-        "expected_move_pct": 1.66,
+        "call_iv": 14.31,
+        "put_iv": 12.69,
+        "expected_move_pct": 1.41,
         "iv_skew": "calls_favored"
       },
       {
         "date": "2026-10-28",
         "event": "Fed Interest Rate Decision",
         "impact": "high",
-        "call_iv": 17.22,
-        "put_iv": 12.9,
-        "expected_move_pct": 1.93,
+        "call_iv": 15.28,
+        "put_iv": 13.59,
+        "expected_move_pct": 1.69,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 60,
-    "pct_above_50d_ma": 55,
+    "pct_above_20d_ma": 55,
+    "pct_above_50d_ma": 50,
     "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
     "deterioration_risk": true
@@ -90,8 +90,8 @@
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 3.92,
-    "laggard": "XLP",
-    "laggard_downside_pct": -4.46
+    "leader_upside_pct": 2.81,
+    "laggard": "XLB",
+    "laggard_downside_pct": -6.92
   }
 }
