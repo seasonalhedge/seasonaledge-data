@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-10-26T17:01:56.305462Z",
-  "date": "2026-10-23",
-  "spx_last": 7663.43,
+  "timestamp": "2026-10-26T17:03:36.154101Z",
+  "date": "2026-10-26",
+  "spx_last": 7623.68,
   "gamma": {
-    "spx_spot": 7663.43,
-    "throttle": -5.01,
-    "gex_flip": 7726.32,
+    "spx_spot": 7623.68,
+    "throttle": -8.28,
+    "gex_flip": 7727.48,
     "implied_move_pct": 1.26,
-    "flip_distance_points": -62.88999999999942,
-    "flip_distance_pct": -0.8206508051877477,
-    "flip_distance_implied_moves": -0.6513101628474188
+    "flip_distance_points": -103.79999999999927,
+    "flip_distance_pct": -1.361547179314967,
+    "flip_distance_implied_moves": -1.0805929994563228
   },
   "gamma_metrics": {
-    "distance_z": -1.3933,
+    "distance_z": -1.859,
     "distance_ready": true,
-    "velocity_z": -1.2846,
+    "velocity_z": -0.9699,
     "velocity_ready": true,
-    "history_count": 150,
+    "history_count": 151,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -1.1757,
-    "velocity_20d_z": -1.3936,
-    "throttle_change_5d": -10.65,
-    "throttle_change_20d": -13.38
+    "velocity_5d_z": -0.794,
+    "velocity_20d_z": -1.1457,
+    "throttle_change_5d": -7.23,
+    "throttle_change_20d": -11.19
   },
   "core4": {
     "dealer_positioning": "Negative",
@@ -33,28 +33,28 @@
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": -5.01,
+    "value": -8.28,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7726.32,
+    "level": 7727.48,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7663.43,
+    "current_spx": 7623.68,
     "status": "below_threshold"
   },
   "positioning_pulse": {
-    "z_score": -1.0,
+    "z_score": -1.2,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
-    "cta_positioning": "long"
+    "cta_positioning": "short"
   },
   "seasonal_bands": {
-    "floor": 7577.0,
-    "ceiling": 7831.0,
+    "floor": 7543.0,
+    "ceiling": 7803.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 3.31,
-    "headroom_pct": 2.19
+    "band_width_pct": 3.41,
+    "headroom_pct": 2.35
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
@@ -63,35 +63,35 @@
         "date": "2026-10-28",
         "event": "Fed Interest Rate Decision",
         "impact": "high",
-        "call_iv": 20.18,
-        "put_iv": 17.95,
-        "expected_move_pct": 1.99,
+        "call_iv": 20.69,
+        "put_iv": 17.17,
+        "expected_move_pct": 1.71,
         "iv_skew": "calls_favored"
       },
       {
         "date": "2026-10-29",
-        "event": "GDP Growth Rate QoQ Adv",
+        "event": "Core PCE Price Index MoM",
         "impact": "high",
-        "call_iv": 20.56,
-        "put_iv": 18.32,
-        "expected_move_pct": 2.27,
+        "call_iv": 21.03,
+        "put_iv": 17.68,
+        "expected_move_pct": 2.02,
         "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 55,
-    "pct_above_50d_ma": 55,
-    "pct_above_200d_ma": 70,
+    "pct_above_20d_ma": 28,
+    "pct_above_50d_ma": 45,
+    "pct_above_200d_ma": 72,
     "momentum_health": "neutral",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLK",
-    "leader_upside_pct": 5.03,
-    "laggard": "XLP",
-    "laggard_downside_pct": -5.87
+    "leader_upside_pct": 4.07,
+    "laggard": "XLB",
+    "laggard_downside_pct": -4.71
   }
 }
