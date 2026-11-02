@@ -1,110 +1,110 @@
 {
-  "timestamp": "2026-10-30T15:48:18.460876Z",
-  "date": "2026-10-30",
-  "spx_last": 7720.39,
+  "timestamp": "2026-11-02T17:02:14.668234Z",
+  "date": "2026-11-02",
+  "spx_last": 7580.07,
   "gamma": {
-    "spx_spot": 7720.39,
-    "throttle": 0.11,
-    "gex_flip": 7719.02,
+    "spx_spot": 7580.07,
+    "throttle": -10.67,
+    "gex_flip": 7713.29,
     "implied_move_pct": 1.26,
-    "flip_distance_points": 1.3699999999998909,
-    "flip_distance_pct": 0.017745217534345943,
-    "flip_distance_implied_moves": 0.01408350597963964
+    "flip_distance_points": -133.22000000000025,
+    "flip_distance_pct": -1.7575035586742638,
+    "flip_distance_implied_moves": -1.3948440941859235
   },
   "gamma_metrics": {
-    "distance_z": -0.5907,
+    "distance_z": -2.2884,
     "distance_ready": true,
-    "velocity_z": 0.2414,
+    "velocity_z": -0.6274,
     "velocity_ready": true,
-    "history_count": 155,
+    "history_count": 156,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": 0.5958,
-    "velocity_20d_z": -0.113,
-    "throttle_change_5d": 5.12,
-    "throttle_change_20d": -1.01
+    "velocity_5d_z": -0.2322,
+    "velocity_20d_z": -1.0226,
+    "throttle_change_5d": -2.39,
+    "throttle_change_20d": -9.99
   },
   "core4": {
-    "dealer_positioning": "Neutral",
+    "dealer_positioning": "Negative",
     "institutional_flow": "Bearish",
-    "price_range_bias": "Neutral",
+    "price_range_bias": "Long",
     "risk_stance": "Risk On",
     "option_score": 2,
     "regime": "NEUTRAL"
   },
   "seasonal_strength": {
-    "value": 0.11,
+    "value": -10.67,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7719.02,
+    "level": 7713.29,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7720.39,
-    "status": "approaching_threshold"
+    "current_spx": 7580.07,
+    "status": "below_threshold"
   },
   "positioning_pulse": {
-    "z_score": -0.9,
+    "z_score": -0.8,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
-    "cta_positioning": "short"
+    "cta_positioning": "long"
   },
   "seasonal_bands": {
-    "floor": 7579.0,
-    "ceiling": 7838.0,
+    "floor": 7530.0,
+    "ceiling": 7793.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 3.35,
-    "headroom_pct": 1.52
+    "band_width_pct": 3.47,
+    "headroom_pct": 2.81
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
-        "date": "2026-11-02",
-        "event": "ISM Manufacturing PMI",
-        "impact": "high",
-        "call_iv": 6.58,
-        "put_iv": 22.73,
-        "expected_move_pct": 1.08,
-        "iv_skew": "puts_favored"
-      },
-      {
         "date": "2026-11-03",
         "event": "Midterm Elections",
         "impact": "high",
-        "call_iv": 8.19,
-        "put_iv": 21.01,
-        "expected_move_pct": 1.32,
-        "iv_skew": "puts_favored"
+        "call_iv": 24.75,
+        "put_iv": 18.94,
+        "expected_move_pct": 1.61,
+        "iv_skew": "calls_favored"
+      },
+      {
+        "date": "2026-11-03",
+        "event": "JOLTs Job Openings",
+        "impact": "high",
+        "call_iv": 24.75,
+        "put_iv": 18.94,
+        "expected_move_pct": 1.61,
+        "iv_skew": "calls_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 55,
-    "pct_above_50d_ma": 55,
-    "pct_above_200d_ma": 70,
+    "pct_above_20d_ma": 45,
+    "pct_above_50d_ma": 50,
+    "pct_above_200d_ma": 65,
     "momentum_health": "neutral",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
-    "leader": "XLC",
-    "leader_upside_pct": 3.61,
-    "laggard": "XLV",
-    "laggard_downside_pct": -3.98
+    "leader": "XLK",
+    "leader_upside_pct": 6.02,
+    "laggard": "XLB",
+    "laggard_downside_pct": -7.63
   },
   "msr_validation": {
-    "report_date": "2026-10-30",
-    "data_date": "2026-10-29",
-    "header_date": "2026-10-30",
-    "pdf_created_utc": "2026-10-29T22:59:45Z",
-    "spx_public_close": 7720.39,
+    "report_date": "2026-11-02",
+    "data_date": "2026-10-30",
+    "header_date": "2026-11-02",
+    "pdf_created_utc": "2026-11-01T22:21:55Z",
+    "spx_public_close": 7580.07,
     "spx_source": "Yahoo ^GSPC",
     "flags": [],
-    "pdf_sha256": "7ac7619d45daacd85c11b56e3b1d1b5b4e7b0d57bcad6f28885a36d3bf303d21",
-    "pdf": "/Users/eg/seasonaledge/MSR_10.30.pdf",
-    "ai_extract_date": "2026-10-30",
-    "cache": "extractions/7ac7619d45daacd85c11b56e3b1d1b5b4e7b0d57bcad6f28885a36d3bf303d21.json"
+    "pdf_sha256": "f9928e60d8e017baea89cc20b7be1d3ccbb57a6fc03e5d18fb54f55210fe604f",
+    "pdf": "/Users/eg/seasonaledge/MSR_11.02.pdf",
+    "ai_extract_date": "2026-11-02",
+    "cache": "extractions/f9928e60d8e017baea89cc20b7be1d3ccbb57a6fc03e5d18fb54f55210fe604f.json"
   }
 }
