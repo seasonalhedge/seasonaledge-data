@@ -1,65 +1,65 @@
 {
-  "timestamp": "2026-11-05T17:23:32.944813Z",
-  "date": "2026-11-05",
-  "spx_last": 7688.62,
+  "timestamp": "2026-11-06T16:19:39.530990Z",
+  "date": "2026-11-06",
+  "spx_last": 7353.73,
   "gamma": {
-    "spx_spot": 7688.62,
-    "throttle": -0.11,
-    "gex_flip": 7689.83,
+    "spx_spot": 7353.73,
+    "throttle": -23.89,
+    "gex_flip": 7648.82,
     "implied_move_pct": 1.26,
-    "flip_distance_points": -1.2100000000000364,
-    "flip_distance_pct": -0.015737544578871585,
-    "flip_distance_implied_moves": -0.012490114745136177
+    "flip_distance_points": -295.09000000000015,
+    "flip_distance_pct": -4.012793507512516,
+    "flip_distance_implied_moves": -3.1847567519940605
   },
   "gamma_metrics": {
-    "distance_z": -0.3803,
+    "distance_z": -3.929,
     "distance_ready": true,
-    "velocity_z": -0.3963,
+    "velocity_z": -3.1708,
     "velocity_ready": true,
-    "history_count": 159,
+    "history_count": 160,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -0.0366,
-    "velocity_20d_z": -0.7559,
-    "throttle_change_5d": -2.11,
-    "throttle_change_20d": -8.5
+    "velocity_5d_z": -3.1002,
+    "velocity_20d_z": -3.2415,
+    "throttle_change_5d": -24.0,
+    "throttle_change_20d": -35.25
   },
   "core4": {
-    "dealer_positioning": "Neutral",
+    "dealer_positioning": "Negative",
     "institutional_flow": "Bearish",
     "price_range_bias": "Long",
-    "risk_stance": "Risk On",
-    "option_score": 3,
-    "regime": "NEUTRAL"
+    "risk_stance": "Risk Off",
+    "option_score": 1,
+    "regime": "BEARISH"
   },
   "seasonal_strength": {
-    "value": -0.11,
+    "value": -23.89,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7689.83,
+    "level": 7648.82,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7688.62,
-    "status": "approaching_threshold"
+    "current_spx": 7353.73,
+    "status": "below_threshold"
   },
   "positioning_pulse": {
-    "z_score": -0.8,
+    "z_score": -1.3,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
-    "cta_positioning": "long",
-    "cta_level": 2.0,
-    "cta_chg_1m": -53.0,
-    "cta_chg_3m": -68.0,
+    "cta_positioning": "short",
+    "cta_level": -10.0,
+    "cta_chg_1m": -60.0,
+    "cta_chg_3m": -75.0,
     "cta_direction": "falling",
-    "cta_room_to_flip": 2.0
+    "cta_room_to_flip": -10.0
   },
   "seasonal_bands": {
-    "floor": 7467.0,
-    "ceiling": 7768.0,
+    "floor": 7345.0,
+    "ceiling": 7694.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 3.91,
-    "headroom_pct": 1.03
+    "band_width_pct": 4.75,
+    "headroom_pct": 4.63
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
@@ -68,83 +68,84 @@
         "date": "2026-11-06",
         "event": "Non Farm Payrolls",
         "impact": "high",
-        "call_iv": 19.03,
-        "put_iv": 11.21,
-        "expected_move_pct": 1.11,
-        "iv_skew": "calls_favored"
+        "call_iv": 34.65,
+        "put_iv": 37.27,
+        "expected_move_pct": 1.86,
+        "iv_skew": "puts_favored"
       },
       {
         "date": "2026-11-10",
         "event": "Core Inflation Rate MoM",
         "impact": "high",
-        "call_iv": 18.58,
-        "put_iv": 12.42,
-        "expected_move_pct": 1.62,
-        "iv_skew": "calls_favored"
+        "call_iv": 34.12,
+        "put_iv": 34.9,
+        "expected_move_pct": 3.12,
+        "iv_skew": "puts_favored"
       }
     ]
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 74,
-    "pct_above_50d_ma": 72,
-    "pct_above_200d_ma": 65,
-    "momentum_health": "neutral",
+    "pct_above_20d_ma": 64,
+    "pct_above_50d_ma": 63,
+    "pct_above_200d_ma": 59,
+    "momentum_health": "oversold",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
-    "leader": "XLE",
-    "leader_upside_pct": 7.94,
-    "laggard": "XLB",
-    "laggard_downside_pct": -7.8
+    "leader": "XLK",
+    "leader_upside_pct": 9.28,
+    "laggard": "GLD",
+    "laggard_downside_pct": -4.89
   },
   "msr_validation": {
-    "report_date": "2026-11-05",
-    "data_date": "2026-11-04",
-    "header_date": "2026-11-05",
-    "pdf_created_utc": "2026-11-04T22:35:17Z",
-    "spx_public_close": 7688.62,
+    "report_date": "2026-11-06",
+    "data_date": "2026-11-05",
+    "header_date": "2026-11-06",
+    "pdf_created_utc": "2026-11-05T23:06:40Z",
+    "spx_public_close": 7353.73,
     "spx_source": "Yahoo ^GSPC",
     "flags": [],
-    "pdf_sha256": "0a488e2cd275424ffbaaea90d582036cec143c7686fd95e1e4c30f96563f3e69",
-    "pdf": "/Users/eg/seasonaledge/MSR_11.05.pdf",
-    "ai_extract_date": "2026-11-05",
-    "cache": "extractions/0a488e2cd275424ffbaaea90d582036cec143c7686fd95e1e4c30f96563f3e69.json",
+    "pdf_sha256": "91b0a389726185ef4d3f86a7c939c8a55591af9d886c89f2d297c7b19563374b",
+    "pdf": "/Users/eg/seasonaledge/MSR_11.06.pdf",
+    "ai_extract_date": "2026-11-06",
+    "cache": "extractions/91b0a389726185ef4d3f86a7c939c8a55591af9d886c89f2d297c7b19563374b.json",
     "overrides": {
       "seasonal_tone.pct_above_20d_ma": {
-        "value": 74,
-        "raw_close": 73.9,
-        "date": "2026-11-04",
+        "value": 64,
+        "raw_close": 63.94,
+        "date": "2026-11-05",
         "source": "tradingview:INDEX:S5TW"
       },
       "seasonal_tone.pct_above_50d_ma": {
-        "value": 72,
-        "raw_close": 71.91,
-        "date": "2026-11-04",
+        "value": 63,
+        "raw_close": 62.54,
+        "date": "2026-11-05",
         "source": "tradingview:INDEX:S5FI"
       },
       "seasonal_tone.pct_above_200d_ma": {
-        "value": 65,
-        "source": "extraction_fallback_tv_unavailable",
-        "symbol": "INDEX:S5TH"
+        "value": 59,
+        "raw_close": 58.56,
+        "date": "2026-11-05",
+        "source": "tradingview:INDEX:S5TH"
       },
       "positioning_pulse.cta_level": {
-        "value": 2.0,
+        "value": -10.0,
         "source": "zoom_chart",
-        "pass1": 2.0,
-        "pass2": 2.0,
-        "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-05_cta.png",
+        "pass1": -10.0,
+        "pass2": -10.0,
+        "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-06_cta.png",
         "crop_method": "bottom_right_image:xref=61"
       },
       "positioning_pulse.cta_chg_1m": {
-        "value": -53.0,
-        "ref_level": 55.0,
+        "value": -60.0,
+        "ref_level": 50.0,
         "source": "chart_read"
       },
       "positioning_pulse.cta_chg_3m": {
-        "value": -68.0,
-        "ref_level": 70.0,
+        "value": -75.0,
+        "ref_level": 65.0,
         "source": "chart_read"
       },
       "positioning_pulse.cta_direction": {
@@ -153,13 +154,13 @@
         "eps": 5.0
       },
       "positioning_pulse.cta_room_to_flip": {
-        "value": 2.0,
+        "value": -10.0,
         "source": "derived_level_minus_zero"
       },
       "positioning_pulse.cta_positioning": {
-        "value": "long",
+        "value": "short",
         "source": "zoom_chart_sign",
-        "zoom_level": 2.0,
+        "zoom_level": -10.0,
         "previous_extraction": "short",
         "resolved_disagreement": false
       }
@@ -167,38 +168,39 @@
   },
   "overrides": {
     "seasonal_tone.pct_above_20d_ma": {
-      "value": 74,
-      "raw_close": 73.9,
-      "date": "2026-11-04",
+      "value": 64,
+      "raw_close": 63.94,
+      "date": "2026-11-05",
       "source": "tradingview:INDEX:S5TW"
     },
     "seasonal_tone.pct_above_50d_ma": {
-      "value": 72,
-      "raw_close": 71.91,
-      "date": "2026-11-04",
+      "value": 63,
+      "raw_close": 62.54,
+      "date": "2026-11-05",
       "source": "tradingview:INDEX:S5FI"
     },
     "seasonal_tone.pct_above_200d_ma": {
-      "value": 65,
-      "source": "extraction_fallback_tv_unavailable",
-      "symbol": "INDEX:S5TH"
+      "value": 59,
+      "raw_close": 58.56,
+      "date": "2026-11-05",
+      "source": "tradingview:INDEX:S5TH"
     },
     "positioning_pulse.cta_level": {
-      "value": 2.0,
+      "value": -10.0,
       "source": "zoom_chart",
-      "pass1": 2.0,
-      "pass2": 2.0,
-      "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-05_cta.png",
+      "pass1": -10.0,
+      "pass2": -10.0,
+      "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-06_cta.png",
       "crop_method": "bottom_right_image:xref=61"
     },
     "positioning_pulse.cta_chg_1m": {
-      "value": -53.0,
-      "ref_level": 55.0,
+      "value": -60.0,
+      "ref_level": 50.0,
       "source": "chart_read"
     },
     "positioning_pulse.cta_chg_3m": {
-      "value": -68.0,
-      "ref_level": 70.0,
+      "value": -75.0,
+      "ref_level": 65.0,
       "source": "chart_read"
     },
     "positioning_pulse.cta_direction": {
@@ -207,13 +209,13 @@
       "eps": 5.0
     },
     "positioning_pulse.cta_room_to_flip": {
-      "value": 2.0,
+      "value": -10.0,
       "source": "derived_level_minus_zero"
     },
     "positioning_pulse.cta_positioning": {
-      "value": "long",
+      "value": "short",
       "source": "zoom_chart_sign",
-      "zoom_level": 2.0,
+      "zoom_level": -10.0,
       "previous_extraction": "short",
       "resolved_disagreement": false
     }
