@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-11-09T14:19:17.753800Z",
-  "date": "2026-11-09",
-  "spx_last": 7376.86,
+  "timestamp": "2026-11-10T19:46:10.416306Z",
+  "date": "2026-11-10",
+  "spx_last": 7549.94,
   "gamma": {
-    "spx_spot": 7376.86,
-    "throttle": -22.33,
-    "gex_flip": 7651.18,
+    "spx_spot": 7549.94,
+    "throttle": -8.49,
+    "gex_flip": 7654.62,
     "implied_move_pct": 1.26,
-    "flip_distance_points": -274.3200000000006,
-    "flip_distance_pct": -3.7186553628508694,
-    "flip_distance_implied_moves": -2.951313780040372
+    "flip_distance_points": -104.68000000000029,
+    "flip_distance_pct": -1.3865010847768366,
+    "flip_distance_implied_moves": -1.1003976863308227
   },
   "gamma_metrics": {
-    "distance_z": -3.2815,
+    "distance_z": -1.2657,
     "distance_ready": true,
-    "velocity_z": -1.9481,
+    "velocity_z": -0.0835,
     "velocity_ready": true,
-    "history_count": 161,
+    "history_count": 162,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -1.3258,
-    "velocity_20d_z": -2.5705,
-    "throttle_change_5d": -11.66,
-    "throttle_change_20d": -30.51
+    "velocity_5d_z": 0.7515,
+    "velocity_20d_z": -0.9184,
+    "throttle_change_5d": 3.07,
+    "throttle_change_20d": -13.01
   },
   "core4": {
     "dealer_positioning": "Negative",
@@ -33,33 +33,33 @@
     "regime": "BEARISH"
   },
   "seasonal_strength": {
-    "value": -22.33,
+    "value": -8.49,
     "definition": "How strongly dealer hedging is suppressing volatility right now.",
     "interpretation": "weak_suppression"
   },
   "price_threshold": {
-    "level": 7651.18,
+    "level": 7654.62,
     "definition": "The price level above which dealer hedging flips and volatility could expand.",
-    "current_spx": 7376.86,
+    "current_spx": 7549.94,
     "status": "below_threshold"
   },
   "positioning_pulse": {
-    "z_score": -1.1,
+    "z_score": -1.2,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
     "cta_positioning": "short",
-    "cta_level": -28.0,
-    "cta_chg_1m": -73.0,
-    "cta_chg_3m": -93.0,
+    "cta_level": -38.0,
+    "cta_chg_1m": -83.0,
+    "cta_chg_3m": -98.0,
     "cta_direction": "falling",
-    "cta_room_to_flip": -28.0
+    "cta_room_to_flip": -38.0
   },
   "seasonal_bands": {
-    "floor": 7272.0,
-    "ceiling": 7652.0,
+    "floor": 7315.0,
+    "ceiling": 7659.0,
     "definition": "The upper and lower price levels where the market is likely to trade.",
-    "band_width_pct": 5.15,
-    "headroom_pct": 3.73
+    "band_width_pct": 4.56,
+    "headroom_pct": 1.44
   },
   "seasonal_catalyst": {
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
@@ -86,66 +86,66 @@
   },
   "seasonal_tone": {
     "definition": "How many stocks are above their moving averages; signals if the market is healthy or overextended.",
-    "pct_above_20d_ma": 60,
-    "pct_above_50d_ma": 62,
-    "pct_above_200d_ma": 56,
-    "momentum_health": "oversold",
+    "pct_above_20d_ma": 69,
+    "pct_above_50d_ma": 69,
+    "pct_above_200d_ma": 63,
+    "momentum_health": "neutral",
     "deterioration_risk": true
   },
   "seasonal_momentum": {
     "definition": "Which sectors are leading and which are lagging; where volatility edges are.",
     "leader": "XLE",
-    "leader_upside_pct": 6.64,
+    "leader_upside_pct": 4.71,
     "laggard": "XLB",
-    "laggard_downside_pct": -3.9
+    "laggard_downside_pct": -5.88
   },
   "msr_validation": {
-    "report_date": "2026-11-09",
-    "data_date": "2026-11-06",
-    "header_date": "2026-11-09",
-    "pdf_created_utc": "2026-11-08T23:10:59Z",
-    "spx_public_close": 7376.86,
+    "report_date": "2026-11-10",
+    "data_date": "2026-11-09",
+    "header_date": "2026-11-10",
+    "pdf_created_utc": "2026-11-09T22:20:28Z",
+    "spx_public_close": 7549.94,
     "spx_source": "Yahoo ^GSPC",
     "flags": [],
-    "pdf_sha256": "5510421e5eeb25a169d39e997995a642e194290ba262a5d6b0338c9ef4a08bfa",
-    "pdf": "/Users/eg/seasonaledge/MSR_11.09.pdf",
-    "ai_extract_date": "2026-11-09",
-    "cache": "extractions/5510421e5eeb25a169d39e997995a642e194290ba262a5d6b0338c9ef4a08bfa.json",
+    "pdf_sha256": "0a1d1f216dc3f098ab0f139147d2dac8395d2a3dfaf0fd19c75783ac8ddd625e",
+    "pdf": "/Users/eg/seasonaledge/MSR_11.10.pdf",
+    "ai_extract_date": "2026-11-10",
+    "cache": "extractions/0a1d1f216dc3f098ab0f139147d2dac8395d2a3dfaf0fd19c75783ac8ddd625e.json",
     "overrides": {
       "seasonal_tone.pct_above_20d_ma": {
-        "value": 60,
-        "raw_close": 59.76,
-        "date": "2026-11-06",
+        "value": 69,
+        "raw_close": 68.98,
+        "date": "2026-11-09",
         "source": "tradingview:INDEX:S5TW"
       },
       "seasonal_tone.pct_above_50d_ma": {
-        "value": 62,
-        "raw_close": 61.55,
-        "date": "2026-11-06",
+        "value": 69,
+        "raw_close": 69.18,
+        "date": "2026-11-09",
         "source": "tradingview:INDEX:S5FI"
       },
       "seasonal_tone.pct_above_200d_ma": {
-        "value": 56,
-        "raw_close": 55.97,
-        "date": "2026-11-06",
+        "value": 63,
+        "raw_close": 63.02,
+        "date": "2026-11-09",
         "source": "tradingview:INDEX:S5TH"
       },
       "positioning_pulse.cta_level": {
-        "value": -28.0,
+        "value": -38.0,
         "source": "zoom_chart",
-        "pass1": -28.0,
-        "pass2": -28.0,
-        "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-09_cta.png",
+        "pass1": -38.0,
+        "pass2": -38.0,
+        "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-10_cta.png",
         "crop_method": "bottom_right_image:xref=61"
       },
       "positioning_pulse.cta_chg_1m": {
-        "value": -73.0,
+        "value": -83.0,
         "ref_level": 45.0,
         "source": "chart_read"
       },
       "positioning_pulse.cta_chg_3m": {
-        "value": -93.0,
-        "ref_level": 65.0,
+        "value": -98.0,
+        "ref_level": 60.0,
         "source": "chart_read"
       },
       "positioning_pulse.cta_direction": {
@@ -154,13 +154,13 @@
         "eps": 5.0
       },
       "positioning_pulse.cta_room_to_flip": {
-        "value": -28.0,
+        "value": -38.0,
         "source": "derived_level_minus_zero"
       },
       "positioning_pulse.cta_positioning": {
         "value": "short",
         "source": "zoom_chart_sign",
-        "zoom_level": -28.0,
+        "zoom_level": -38.0,
         "previous_extraction": "short",
         "resolved_disagreement": false
       }
@@ -168,39 +168,39 @@
   },
   "overrides": {
     "seasonal_tone.pct_above_20d_ma": {
-      "value": 60,
-      "raw_close": 59.76,
-      "date": "2026-11-06",
+      "value": 69,
+      "raw_close": 68.98,
+      "date": "2026-11-09",
       "source": "tradingview:INDEX:S5TW"
     },
     "seasonal_tone.pct_above_50d_ma": {
-      "value": 62,
-      "raw_close": 61.55,
-      "date": "2026-11-06",
+      "value": 69,
+      "raw_close": 69.18,
+      "date": "2026-11-09",
       "source": "tradingview:INDEX:S5FI"
     },
     "seasonal_tone.pct_above_200d_ma": {
-      "value": 56,
-      "raw_close": 55.97,
-      "date": "2026-11-06",
+      "value": 63,
+      "raw_close": 63.02,
+      "date": "2026-11-09",
       "source": "tradingview:INDEX:S5TH"
     },
     "positioning_pulse.cta_level": {
-      "value": -28.0,
+      "value": -38.0,
       "source": "zoom_chart",
-      "pass1": -28.0,
-      "pass2": -28.0,
-      "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-09_cta.png",
+      "pass1": -38.0,
+      "pass2": -38.0,
+      "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-10_cta.png",
       "crop_method": "bottom_right_image:xref=61"
     },
     "positioning_pulse.cta_chg_1m": {
-      "value": -73.0,
+      "value": -83.0,
       "ref_level": 45.0,
       "source": "chart_read"
     },
     "positioning_pulse.cta_chg_3m": {
-      "value": -93.0,
-      "ref_level": 65.0,
+      "value": -98.0,
+      "ref_level": 60.0,
       "source": "chart_read"
     },
     "positioning_pulse.cta_direction": {
@@ -209,13 +209,13 @@
       "eps": 5.0
     },
     "positioning_pulse.cta_room_to_flip": {
-      "value": -28.0,
+      "value": -38.0,
       "source": "derived_level_minus_zero"
     },
     "positioning_pulse.cta_positioning": {
       "value": "short",
       "source": "zoom_chart_sign",
-      "zoom_level": -28.0,
+      "zoom_level": -38.0,
       "previous_extraction": "short",
       "resolved_disagreement": false
     }
