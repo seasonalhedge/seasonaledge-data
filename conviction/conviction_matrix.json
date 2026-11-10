@@ -1,13 +1,13 @@
 {
   "meta": {
-    "timestamp": "2026-11-09T12:22:21.886124Z",
+    "timestamp": "2026-11-10T12:20:18.980586Z",
     "regime": {
       "name": "WINTER",
       "number": 4,
       "emoji": "❄️",
       "risk_budget": 60,
-      "auto_regime_risk": 56.4,
-      "composite_stress": 33.2,
+      "auto_regime_risk": 52.1,
+      "composite_stress": 31.1,
       "risk_capacity": "SELECTIVE: REDUCED",
       "hedge_mode": "DURATION"
     },
@@ -24,139 +24,139 @@
   "ecosystems": [
     {
       "rank": 1,
-      "name": "Financial Infrastructure",
-      "leadership": 45.0,
-      "season_compat": 40,
-      "signal": 84.8,
-      "conviction": 57
+      "name": "Precious Metals",
+      "leadership": 64.4,
+      "season_compat": 50,
+      "signal": 70.2,
+      "conviction": 62
     },
     {
       "rank": 2,
-      "name": "Precious Metals",
-      "leadership": 55.8,
-      "season_compat": 50,
-      "signal": 57.4,
-      "conviction": 54
+      "name": "Financial Infrastructure",
+      "leadership": 49.2,
+      "season_compat": 40,
+      "signal": 85.3,
+      "conviction": 58
     },
     {
       "rank": 3,
-      "name": "Cybersecurity",
-      "leadership": 32.2,
-      "season_compat": 70,
-      "signal": 39.6,
-      "conviction": 47
+      "name": "Software",
+      "leadership": 45.8,
+      "season_compat": 60,
+      "signal": 41.5,
+      "conviction": 49
     },
     {
       "rank": 4,
-      "name": "Software",
-      "leadership": 40.8,
-      "season_compat": 60,
-      "signal": 40.0,
-      "conviction": 47
+      "name": "Cybersecurity",
+      "leadership": 36.9,
+      "season_compat": 70,
+      "signal": 31.6,
+      "conviction": 46
     },
     {
       "rank": 5,
-      "name": "Data Centers",
-      "leadership": 23.3,
-      "season_compat": 70,
-      "signal": 12.1,
-      "conviction": 35
+      "name": "Defense",
+      "leadership": 37.6,
+      "season_compat": 60,
+      "signal": 38.1,
+      "conviction": 45
     },
     {
       "rank": 6,
-      "name": "Defense",
-      "leadership": 21.7,
-      "season_compat": 60,
-      "signal": 23.8,
-      "conviction": 35
+      "name": "Physical Infrastructure",
+      "leadership": 34.5,
+      "season_compat": 30,
+      "signal": 55.4,
+      "conviction": 40
     },
     {
       "rank": 7,
-      "name": "AI Ecosystem",
-      "leadership": 24.4,
-      "season_compat": 40,
-      "signal": 19.5,
-      "conviction": 28
+      "name": "Data Centers",
+      "leadership": 22.1,
+      "season_compat": 70,
+      "signal": 24.7,
+      "conviction": 39
     },
     {
       "rank": 8,
-      "name": "Quantum",
-      "leadership": 22.0,
-      "season_compat": 20,
-      "signal": 43.4,
-      "conviction": 28
+      "name": "Nuclear",
+      "leadership": 29.2,
+      "season_compat": 30,
+      "signal": 54.2,
+      "conviction": 38
     },
     {
       "rank": 9,
-      "name": "Physical Infrastructure",
-      "leadership": 20.4,
-      "season_compat": 30,
-      "signal": 32.3,
-      "conviction": 28
+      "name": "Space & Defense",
+      "leadership": 31.2,
+      "season_compat": 50,
+      "signal": 24.2,
+      "conviction": 35
     },
     {
       "rank": 10,
-      "name": "Space & Defense",
-      "leadership": 16.4,
-      "season_compat": 50,
-      "signal": 11.4,
-      "conviction": 26
+      "name": "Quantum",
+      "leadership": 24.1,
+      "season_compat": 20,
+      "signal": 55.5,
+      "conviction": 33
     },
     {
       "rank": 11,
       "name": "AI Infrastructure",
-      "leadership": 16.2,
+      "leadership": 18.0,
       "season_compat": 40,
-      "signal": 19.0,
-      "conviction": 25
+      "signal": 30.6,
+      "conviction": 30
     },
     {
       "rank": 12,
-      "name": "Photonics",
-      "leadership": 23.0,
+      "name": "AI Ecosystem",
+      "leadership": 26.4,
       "season_compat": 40,
-      "signal": 9.6,
-      "conviction": 24
+      "signal": 21.5,
+      "conviction": 29
     },
     {
       "rank": 13,
-      "name": "Semiconductors",
-      "leadership": 18.0,
-      "season_compat": 30,
-      "signal": 19.9,
-      "conviction": 23
+      "name": "Photonics",
+      "leadership": 25.3,
+      "season_compat": 40,
+      "signal": 11.2,
+      "conviction": 26
     },
     {
       "rank": 14,
-      "name": "Memory",
-      "leadership": 18.1,
-      "season_compat": 30,
-      "signal": 17.9,
-      "conviction": 22
-    },
-    {
-      "rank": 15,
-      "name": "Physical AI",
-      "leadership": 13.8,
-      "season_compat": 30,
-      "signal": 19.5,
-      "conviction": 21
-    },
-    {
-      "rank": 16,
-      "name": "Nuclear",
-      "leadership": 18.5,
-      "season_compat": 30,
-      "signal": 11.1,
-      "conviction": 20
-    },
-    {
-      "rank": 17,
       "name": "Energy Infrastructure",
       "leadership": 13.0,
       "season_compat": 30,
-      "signal": 11.4,
-      "conviction": 18
+      "signal": 34.9,
+      "conviction": 26
+    },
+    {
+      "rank": 15,
+      "name": "Semiconductors",
+      "leadership": 18.0,
+      "season_compat": 30,
+      "signal": 22.5,
+      "conviction": 24
+    },
+    {
+      "rank": 16,
+      "name": "Memory",
+      "leadership": 18.5,
+      "season_compat": 30,
+      "signal": 19.6,
+      "conviction": 23
+    },
+    {
+      "rank": 17,
+      "name": "Physical AI",
+      "leadership": 15.6,
+      "season_compat": 30,
+      "signal": 22.0,
+      "conviction": 23
     }
   ]
 }
