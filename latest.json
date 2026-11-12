@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T15:53:03.440143Z",
+  "timestamp": "2026-11-12T20:58:55.573035Z",
   "date": "2026-11-12",
   "spx_last": 7619.38,
   "gamma": {
@@ -44,15 +44,24 @@
     "status": "below_threshold"
   },
   "positioning_pulse": {
-    "z_score": -1.1,
+    "z_score": -1.3,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "bearish",
-    "cta_positioning": "short",
-    "cta_level": -12.0,
-    "cta_chg_1m": -57.0,
-    "cta_chg_3m": -77.0,
+    "cta_positioning": "long",
+    "cta_level": 3.4,
+    "cta_chg_1m": -24.9,
+    "cta_chg_3m": -58.3,
     "cta_direction": "falling",
-    "cta_room_to_flip": -12.0
+    "cta_room_to_flip": 3.4,
+    "cta_status": "VERIFIED",
+    "cta_data_date": "2026-11-11",
+    "vts_level": 113.6,
+    "vts_status": "VERIFIED",
+    "vts_data_date": "2026-11-11",
+    "vts_chg_1m": -113.5,
+    "vts_next_day_check": null,
+    "z_score_status": "STALE",
+    "spi_data_date": "2026-11-05"
   },
   "seasonal_bands": {
     "floor": 7380.0,
@@ -65,22 +74,22 @@
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
+        "call_iv": 15.75,
         "date": "2026-11-13",
         "event": "PPI MoM",
-        "impact": "high",
-        "call_iv": 15.75,
-        "put_iv": 12.57,
         "expected_move_pct": 1.04,
-        "iv_skew": "calls_favored"
+        "impact": "high",
+        "iv_skew": "calls_favored",
+        "put_iv": 12.57
       },
       {
+        "call_iv": 16.18,
         "date": "2026-11-17",
         "event": "Retail Sales MoM",
-        "impact": "high",
-        "call_iv": 16.18,
-        "put_iv": 13.78,
         "expected_move_pct": 1.56,
-        "iv_skew": "calls_favored"
+        "impact": "high",
+        "iv_skew": "calls_favored",
+        "put_iv": 13.78
       }
     ]
   },
@@ -131,38 +140,131 @@
         "source": "tradingview:INDEX:S5TH"
       },
       "positioning_pulse.cta_level": {
-        "value": -12.0,
-        "source": "zoom_chart",
-        "pass1": -12.0,
-        "pass2": -12.0,
-        "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-12_cta.png",
-        "crop_method": "bottom_right_image:xref=61"
+        "value": 3.4,
+        "status": "VERIFIED",
+        "reason": null,
+        "source": "dashed_line_pixel_v1",
+        "data_date": "2026-11-11",
+        "reads": {
+          "read_a_dashed": 3.38,
+          "read_b_zoom": 3.38,
+          "tip_value": 3.18,
+          "final_stroke_range": [
+            -35.59,
+            3.69
+          ],
+          "calibration": {
+            "ticks": [
+              [
+                80.0,
+                86.0
+              ],
+              [
+                60.0,
+                185.0
+              ],
+              [
+                40.0,
+                284.0
+              ],
+              [
+                20.0,
+                382.0
+              ],
+              [
+                0.0,
+                481.0
+              ],
+              [
+                -20.0,
+                580.0
+              ],
+              [
+                -40.0,
+                679.0
+              ]
+            ],
+            "per_px": -0.2025
+          }
+        },
+        "note": null
       },
       "positioning_pulse.cta_chg_1m": {
-        "value": -57.0,
-        "ref_level": 45.0,
-        "source": "chart_read"
+        "value": -24.9,
+        "ref": {
+          "report_date": "2026-10-13",
+          "value": 28.3
+        },
+        "source": "cta_history (VERIFIED pixel reads)"
       },
       "positioning_pulse.cta_chg_3m": {
-        "value": -77.0,
-        "ref_level": 65.0,
-        "source": "chart_read"
+        "value": -58.3,
+        "ref": {
+          "report_date": "2026-08-14",
+          "value": 61.7
+        },
+        "source": "cta_history (VERIFIED pixel reads)"
       },
       "positioning_pulse.cta_direction": {
         "value": "falling",
         "source": "derived_from_cta_chg_1m",
         "eps": 5.0
       },
-      "positioning_pulse.cta_room_to_flip": {
-        "value": -12.0,
-        "source": "derived_level_minus_zero"
-      },
       "positioning_pulse.cta_positioning": {
-        "value": "short",
-        "source": "zoom_chart_sign",
-        "zoom_level": -12.0,
+        "value": "long",
+        "source": "pixel_level_sign",
+        "pixel_level": 3.4,
         "previous_extraction": "short",
         "resolved_disagreement": false
+      },
+      "positioning_pulse.vts_level": {
+        "value": 113.6,
+        "status": "VERIFIED",
+        "reason": null,
+        "source": "line_end_pixel_v1",
+        "data_date": "2026-11-11",
+        "reads": {
+          "read_a_native": 113.61,
+          "read_b_zoom": 113.47,
+          "last_col_run_px": 6,
+          "calibration": {
+            "ticks": [
+              [
+                300.0,
+                76.0
+              ],
+              [
+                250.0,
+                208.0
+              ],
+              [
+                200.0,
+                339.0
+              ],
+              [
+                150.0,
+                471.0
+              ],
+              [
+                100.0,
+                602.0
+              ],
+              [
+                50.0,
+                734.0
+              ]
+            ],
+            "per_px": -0.3801
+          }
+        },
+        "next_day_check": null
+      },
+      "positioning_pulse.z_score": {
+        "value": -1.3,
+        "status": "STALE",
+        "vision_value": -1.1,
+        "spi_data_date": "2026-11-05",
+        "held_from_report": "2026-11-06"
       }
     }
   },
@@ -186,38 +288,131 @@
       "source": "tradingview:INDEX:S5TH"
     },
     "positioning_pulse.cta_level": {
-      "value": -12.0,
-      "source": "zoom_chart",
-      "pass1": -12.0,
-      "pass2": -12.0,
-      "crop_path": "/Users/eg/seasonaledge/msr_crops/2026-11-12_cta.png",
-      "crop_method": "bottom_right_image:xref=61"
+      "value": 3.4,
+      "status": "VERIFIED",
+      "reason": null,
+      "source": "dashed_line_pixel_v1",
+      "data_date": "2026-11-11",
+      "reads": {
+        "read_a_dashed": 3.38,
+        "read_b_zoom": 3.38,
+        "tip_value": 3.18,
+        "final_stroke_range": [
+          -35.59,
+          3.69
+        ],
+        "calibration": {
+          "ticks": [
+            [
+              80.0,
+              86.0
+            ],
+            [
+              60.0,
+              185.0
+            ],
+            [
+              40.0,
+              284.0
+            ],
+            [
+              20.0,
+              382.0
+            ],
+            [
+              0.0,
+              481.0
+            ],
+            [
+              -20.0,
+              580.0
+            ],
+            [
+              -40.0,
+              679.0
+            ]
+          ],
+          "per_px": -0.2025
+        }
+      },
+      "note": null
     },
     "positioning_pulse.cta_chg_1m": {
-      "value": -57.0,
-      "ref_level": 45.0,
-      "source": "chart_read"
+      "value": -24.9,
+      "ref": {
+        "report_date": "2026-10-13",
+        "value": 28.3
+      },
+      "source": "cta_history (VERIFIED pixel reads)"
     },
     "positioning_pulse.cta_chg_3m": {
-      "value": -77.0,
-      "ref_level": 65.0,
-      "source": "chart_read"
+      "value": -58.3,
+      "ref": {
+        "report_date": "2026-08-14",
+        "value": 61.7
+      },
+      "source": "cta_history (VERIFIED pixel reads)"
     },
     "positioning_pulse.cta_direction": {
       "value": "falling",
       "source": "derived_from_cta_chg_1m",
       "eps": 5.0
     },
-    "positioning_pulse.cta_room_to_flip": {
-      "value": -12.0,
-      "source": "derived_level_minus_zero"
-    },
     "positioning_pulse.cta_positioning": {
-      "value": "short",
-      "source": "zoom_chart_sign",
-      "zoom_level": -12.0,
+      "value": "long",
+      "source": "pixel_level_sign",
+      "pixel_level": 3.4,
       "previous_extraction": "short",
       "resolved_disagreement": false
+    },
+    "positioning_pulse.vts_level": {
+      "value": 113.6,
+      "status": "VERIFIED",
+      "reason": null,
+      "source": "line_end_pixel_v1",
+      "data_date": "2026-11-11",
+      "reads": {
+        "read_a_native": 113.61,
+        "read_b_zoom": 113.47,
+        "last_col_run_px": 6,
+        "calibration": {
+          "ticks": [
+            [
+              300.0,
+              76.0
+            ],
+            [
+              250.0,
+              208.0
+            ],
+            [
+              200.0,
+              339.0
+            ],
+            [
+              150.0,
+              471.0
+            ],
+            [
+              100.0,
+              602.0
+            ],
+            [
+              50.0,
+              734.0
+            ]
+          ],
+          "per_px": -0.3801
+        }
+      },
+      "next_day_check": null
+    },
+    "positioning_pulse.z_score": {
+      "value": -1.3,
+      "status": "STALE",
+      "vision_value": -1.1,
+      "spi_data_date": "2026-11-05",
+      "held_from_report": "2026-11-06"
     }
   }
 }
