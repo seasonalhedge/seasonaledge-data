@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-12T20:58:55.569894Z",
-  "history_count": 164,
-  "published_count": 164,
+  "updated_at": "2026-11-13T17:30:50.102866Z",
+  "history_count": 165,
+  "published_count": 165,
   "gamma_metrics": {
-    "distance_z": -0.4149,
+    "distance_z": -0.7162,
     "distance_ready": true,
-    "velocity_z": -0.2976,
+    "velocity_z": 1.0516,
     "velocity_ready": true,
-    "history_count": 164,
+    "history_count": 165,
     "distance_observation_count": 60,
     "velocity_observation_count": 60,
-    "velocity_5d_z": -0.089,
-    "velocity_20d_z": -0.5062,
-    "throttle_change_5d": -2.85,
-    "throttle_change_20d": -9.31
+    "velocity_5d_z": 2.7301,
+    "velocity_20d_z": -0.627,
+    "throttle_change_5d": 18.67,
+    "throttle_change_20d": -10.86
   },
   "series": [
     {
@@ -1655,6 +1655,16 @@
       "flip_distance_points": -36.57999999999993,
       "flip_distance_pct": -0.4800915560058683,
       "flip_distance_implied_moves": -0.38102504444910185
+    },
+    {
+      "date": "2026-11-13",
+      "spx_spot": 7592.4,
+      "gamma_throttle": -5.22,
+      "gex_flip": 7657.03,
+      "implied_move_pct": 1.26,
+      "flip_distance_points": -64.63000000000011,
+      "flip_distance_pct": -0.8512459828249317,
+      "flip_distance_implied_moves": -0.6755920498610569
     }
   ]
 }
