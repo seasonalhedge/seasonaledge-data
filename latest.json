@@ -44,7 +44,7 @@
     "status": "below_threshold"
   },
   "positioning_pulse": {
-    "z_score": null,
+    "z_score": -0.83,
     "definition": "Whether trend-following funds are positioned to buy or sell.",
     "direction": "neutral",
     "cta_positioning": "long",
@@ -60,15 +60,16 @@
     "vts_data_date": "2026-11-15",
     "vts_chg_1m": -113.4,
     "vts_next_day_check": null,
-    "z_score_status": "STALE",
-    "spi_data_date": "2026-11-05",
-    "z_score_display": "STALE (last Nov 5, 7 sessions)",
+    "z_score_status": "MANUAL",
+    "spi_data_date": "2026-11-13",
+    "z_score_display": "-0.83 (manual, Tier1 morning update)",
     "vts_display": "114.2",
     "cta_printed_date": "2026-11-15",
     "cta_session_date": "2026-11-13",
     "vts_printed_date": "2026-11-15",
     "spi_printed_date": "2026-11-05",
-    "cta_waived": false
+    "cta_waived": false,
+    "spi_source": "manual override (Tier1 morning update screenshot)"
   },
   "seasonal_bands": {
     "floor": 7405.0,
@@ -109,9 +110,9 @@
     "deterioration_risk": true,
     "breadth_score": 67.33,
     "breadth_state": "Healthy",
-    "breadth_emoji": "\ud83c\udf16",
+    "breadth_emoji": "🌖",
     "breadth_data_date": "2026-11-13",
-    "breadth_label": "\ud83c\udf16 Breadth Healthy \u00b7 67/71/64 \u00b7 2026-11-13",
+    "breadth_label": "🌖 Breadth Healthy · 67/71/64 · 2026-11-13",
     "flows_breadth_check": "index plumbing (weak Flows, breadth holding)"
   },
   "seasonal_momentum": {
@@ -422,12 +423,30 @@
       "next_day_check": null
     },
     "positioning_pulse.z_score": {
-      "value": null,
-      "status": "STALE",
-      "vision_value": -0.3,
-      "spi_data_date": "2026-11-05",
-      "held_from_report": "2026-11-06",
-      "display": "STALE (last Nov 5, 7 sessions)"
+      "value": -0.83,
+      "status": "VERIFIED-manual",
+      "source": "manual override (Tier1 morning update screenshot)",
+      "spi_data_date": "2026-11-13",
+      "report_date": "2026-11-16",
+      "display": "-0.83 (manual, Tier1 morning update)",
+      "screenshot_footer_date": "2026-11-15",
+      "reads": {
+        "read_a_native": -0.826,
+        "read_b_zoom": -0.828,
+        "method": "blue dotted latest-value line vs gridlines"
+      },
+      "approved": "Eric 'SPI override' 2026-11-16 14:37 ET",
+      "set_utc": "2026-11-16T19:40:30.856410+00:00",
+      "replaced": {
+        "z_score": null,
+        "z_score_status": "STALE",
+        "z_score_display": "STALE (last Nov 5, 7 sessions)",
+        "spi_data_date": "2026-11-05",
+        "spi_printed_date": "2026-11-05",
+        "vision_value": -0.3,
+        "reason": "MSR_11.16.pdf p4 SPI image identical to 11.13 (footer 2026-11-05)"
+      },
+      "scoring": "display only"
     }
   },
   "alignment": {
@@ -454,7 +473,7 @@
       "growth_n": 0.4280470634053859,
       "inflation_n": -0.02408895569559204,
       "label": "FORECAST",
-      "provenance": "FORECAST BRIDGE \u2014 CLI released / CPI YoY interpolated",
+      "provenance": "FORECAST BRIDGE — CLI released / CPI YoY interpolated",
       "cells": {
         "date": "B71",
         "season": "F71",
