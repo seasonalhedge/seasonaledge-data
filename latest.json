@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-23T17:25:41.490364Z",
+  "timestamp": "2026-11-23T18:56:22.459160Z",
   "date": "2026-11-23",
   "spx_last": 6910.39,
   "gamma": {
@@ -81,22 +81,22 @@
     "definition": "Upcoming economic events that could spike volatility; which direction has the IV edge.",
     "events": [
       {
+        "call_iv": 60.6,
         "date": "2026-11-25",
         "event": "Core PCE Price Index MoM",
-        "impact": "high",
-        "call_iv": 60.6,
-        "put_iv": 44.7,
         "expected_move_pct": 4.76,
-        "iv_skew": "calls_favored"
+        "impact": "high",
+        "iv_skew": "calls_favored",
+        "put_iv": 44.7
       },
       {
+        "call_iv": 60.6,
         "date": "2026-11-25",
         "event": "GDP Growth Rate QoQ 2nd Est",
-        "impact": "high",
-        "call_iv": 60.6,
-        "put_iv": 44.7,
         "expected_move_pct": 4.76,
-        "iv_skew": "calls_favored"
+        "impact": "high",
+        "iv_skew": "calls_favored",
+        "put_iv": 44.7
       }
     ]
   },
@@ -419,7 +419,7 @@
     "rule": "every input = prior NYSE session close of the report date",
     "report_date": "2026-11-23",
     "expected_session": "2026-11-20",
-    "evaluated_at_et": "2026-11-23 12:25:41",
+    "evaluated_at_et": "2026-11-23 13:56:22",
     "allow_lag_requested": [],
     "waivers": [],
     "status": "OK",
