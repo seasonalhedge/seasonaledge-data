@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-23T20:53:19.701627Z",
+  "timestamp": "2026-11-23T21:24:31.573250Z",
   "date": "2026-11-23",
   "spx_last": 6910.39,
   "gamma": {
@@ -419,7 +419,7 @@
     "rule": "every input = prior NYSE session close of the report date",
     "report_date": "2026-11-23",
     "expected_session": "2026-11-20",
-    "evaluated_at_et": "2026-11-23 15:53:19",
+    "evaluated_at_et": "2026-11-23 16:24:31",
     "allow_lag_requested": [],
     "waivers": [],
     "status": "OK",
