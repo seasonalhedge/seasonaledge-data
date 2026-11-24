@@ -108,6 +108,42 @@
     "word": "Max Defensive"
    },
    "unavailable": []
+  },
+  {
+   "as_of": "2026-11-24T17:09:45Z",
+   "report_date": "2026-11-24",
+   "session_date": "2026-11-23",
+   "breadth": {
+    "pct_20d": 31,
+    "pct_50d": 52,
+    "pct_200d": 53,
+    "band": "Mixed",
+    "data_date": "2026-11-23"
+   },
+   "alignment_status": "OK",
+   "stale_after": "STALE when session_date is older than the prior NYSE session before today's date in ET",
+   "weather": {
+    "word": "Severe",
+    "score": 13,
+    "week_ending": "2026-11-20",
+    "valid_through": "2026-11-28"
+   },
+   "season": {
+    "name": "SPRING",
+    "depth": "NARROW",
+    "source_row_label": "FORECAST",
+    "data_month": "2026-10"
+   },
+   "barometer": {
+    "state": "Falling"
+   },
+   "flows": {
+    "label": "BROKEN"
+   },
+   "posture": {
+    "word": "Max Defensive"
+   },
+   "unavailable": []
   }
  ]
 }
