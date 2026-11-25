@@ -1,14 +1,14 @@
 {
   "schema": "se.core4_public.v3",
-  "as_of": "2026-11-24T17:09:45Z",
-  "report_date": "2026-11-24",
-  "session_date": "2026-11-23",
+  "as_of": "2026-11-25T17:19:17Z",
+  "report_date": "2026-11-25",
+  "session_date": "2026-11-24",
   "breadth": {
-    "pct_20d": 31,
-    "pct_50d": 52,
+    "pct_20d": 39,
+    "pct_50d": 55,
     "pct_200d": 53,
     "band": "Mixed",
-    "data_date": "2026-11-23"
+    "data_date": "2026-11-24"
   },
   "alignment_status": "OK",
   "stale_after": "STALE when session_date is older than the prior NYSE session before today's date in ET",
@@ -31,7 +31,7 @@
     "label": "BROKEN"
   },
   "posture": {
-    "word": "Max Defensive"
+    "word": "Defensive"
   },
   "unavailable": []
 }
