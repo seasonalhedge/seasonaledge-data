@@ -180,6 +180,42 @@
     "word": "Defensive"
    },
    "unavailable": []
+  },
+  {
+   "as_of": "2026-11-27T20:41:51Z",
+   "report_date": "2026-11-27",
+   "session_date": "2026-11-25",
+   "breadth": {
+    "pct_20d": 46,
+    "pct_50d": 59,
+    "pct_200d": 55,
+    "band": "Mixed",
+    "data_date": "2026-11-25"
+   },
+   "alignment_status": "OK",
+   "stale_after": "STALE when session_date is older than the prior NYSE session before today's date in ET",
+   "weather": {
+    "word": "Severe",
+    "score": 13,
+    "week_ending": "2026-11-20",
+    "valid_through": "2026-11-28"
+   },
+   "season": {
+    "name": "SPRING",
+    "depth": "NARROW",
+    "source_row_label": "FORECAST",
+    "data_month": "2026-10"
+   },
+   "barometer": {
+    "state": "Falling"
+   },
+   "flows": {
+    "label": "BROKEN"
+   },
+   "posture": {
+    "word": "Defensive"
+   },
+   "unavailable": []
   }
  ]
 }
